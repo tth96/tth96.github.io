@@ -485,3 +485,6 @@ img {
 	width: 100%;
 	background-color: rgba(0,0,0,0.1);
 }
+.comment-fb .fb-comments{
+	width: 100%;
+}
