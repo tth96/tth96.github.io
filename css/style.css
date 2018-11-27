@@ -492,3 +492,19 @@ img {
 .comment-fb .fb-comments > span iframe {
 	width: 100% !important;
 }*/
+
+.youtubevideo {
+	position: relative;
+}
+.youtubevideo:before {
+	content: '';
+	display: block;
+	padding-top: 56.25%;
+}
+.youtubevideo iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
