@@ -13,6 +13,11 @@ body {
 img {
 	max-width: 100%;
 }
+.middle-header .row{
+	width: 100%;
+	font-size: 0;
+
+}
 .container {
 	padding: 0;
 	max-width: 1170px;
@@ -37,16 +42,15 @@ img {
 	padding: 6px 0 6px 0;
 }
 .middle-header{
-	display: flex;
 	padding-top: 6.5px;
 	padding-bottom: 6.5px;
 }
 .logo-phone{
-	display: flex;
-	padding-left: 0;
+	font-size: 0;
 }
 .logo{
-	padding-left: 0;
+	display: inline-block;
+	max-width: 130px;
 }
 #number{
 	margin-top: auto;
@@ -54,8 +58,13 @@ img {
 	
 }
 .phone-number{
-	display: flex;
-	justify-content: flex-end;
+	display: inline-block;
+	width: calc(100% - 130px);
+	text-align: right;
+
+}
+.d-ib{
+	display: inline-block;
 }
 .phone-number p{
 	display: inline-block;
@@ -65,6 +74,7 @@ img {
 	padding-left: 10px;
 	font-weight: 600;
 	color: #606060;
+	vertical-align: middle;
 
 }
 .phone-number img{
@@ -76,29 +86,44 @@ img {
 	font-size: 20px;
 }
 .find{
-	display: flex;
-}
-.timkiem{
-	margin-top: auto;
-	margin-bottom: auto;
-	display: flex;
-	
+	font-size: 14px;
 }
 .search{
 	position: relative;
-	border-radius: 5px;
-	font-size: 13px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	size: 20px;
-	padding-right: 30px;
-	padding-left: 2px;
 
+
+	
+}
+.search input{
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 0;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 35px;
+	outline: none;
 }
 .icon-search{
 	position: absolute;
-	margin-left: 175px;	
-	margin-top: 3px;
+	border:0;
+	background-color: transparent;
+	right: 0;
+	top: 0;
+	padding: 0 12px;
+	line-height: 31px;
+}
+.icon-search:focus{
+	outline: none;
+}
+.icon-search:hover>.fa-search{
+	color: #ada1cb;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.icon-search i{
+	color: #adb5bd;
 }
 .navbar-menu{
 	padding: 0;
