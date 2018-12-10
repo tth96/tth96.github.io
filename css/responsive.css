@@ -4,7 +4,11 @@
 		padding-right: 15px;
 	}
 }
-
+@media (max-width: 992px){
+	.info-header{
+		text-align: center;
+	}
+}
 
 
 
@@ -33,5 +37,6 @@
 	.find{
 		display: block;
 		justify-content:center;
+		padding: 10px 0;
 	}
 }

@@ -474,6 +474,13 @@ img {
 	list-style-position: inside;
 
 }
+.content01-footer ul li a{
+	text-decoration: none;
+	color: #666666;
+}
+.content01-footer ul li a:hover{
+	font-weight: 600;	
+}
 .wrapper-footer{
 	margin-top: 25px;
 }
