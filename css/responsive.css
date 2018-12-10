@@ -14,6 +14,7 @@
 	/*Chon 4 phan tu dau tien*/
 	.content-item .item.col-lg-3:nth-child(-n + 4) {
 		margin-top: 0;
+
 	}
 }
 @media (min-width: 768px) {
@@ -25,5 +26,12 @@
 @media (min-width: 576px) {
 	.content-item .item.col-sm-6:nth-child(-n + 2) {
 		margin-top: 0;
+
+	}
+}
+@media (max-width: 768px){
+	.find{
+		display: block;
+		justify-content:center;
 	}
 }
