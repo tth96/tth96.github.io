@@ -8,6 +8,7 @@
 	.info-header{
 		text-align: center;
 	}
+
 }
 
 
@@ -30,7 +31,11 @@
 @media (min-width: 576px) {
 	.content-item .item.col-sm-6:nth-child(-n + 2) {
 		margin-top: 0;
-
+	}
+}
+@media (max-width: 576px){
+		.main-slider{
+		display: none;
 	}
 }
 @media (max-width: 768px){
@@ -39,4 +44,5 @@
 		justify-content:center;
 		padding: 10px 0;
 	}
+
 }
