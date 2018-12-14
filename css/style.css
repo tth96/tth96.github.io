@@ -98,9 +98,7 @@ img {
 }
 .search{
 	position: relative;
-
-
-	
+	width: 100%;
 }
 .search input{
 	width: 100%;
@@ -336,6 +334,10 @@ img {
 	position: relative;
 	padding: 9px 10px;
 }
+.middle-header .row{
+	margin-left: 0;
+
+}
 .title-content-left span{
 	color: #fff;
 	font-size: 15px;
@@ -566,5 +568,13 @@ img {
 	text-align: center;
 	position: fixed;
 	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+	opacity: 0.7;
 
+}
+.navbar-light .navbar-toggler{
+	padding: 0;
+	width: 50px;
+	height: 35px;
+	font-size: 18px;	
+	margin-bottom: 2px;
 }

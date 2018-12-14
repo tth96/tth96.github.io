@@ -8,6 +8,13 @@
 	.info-header{
 		text-align: center;
 	}
+	.noidung{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#backtotop{
+		right: 5px;
+	}
 
 }
 
@@ -33,12 +40,31 @@
 		margin-top: 0;
 	}
 }
-
+@media (max-width: 576px){
+	.phone-number p{
+		text-align: center;
+	}
+	.phone-number{
+		margin: 0 auto;
+		display: block;
+	}
+	.phone-number img{
+		display: none;
+	}
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+}
 @media (max-width: 768px){
 	.find{
 		display: block;
 		justify-content:center;
 		padding: 10px 0;
+	}
+
+	.navbar{
+		justify-content: flex-end;
 	}
 	.main-slider .slick-dots{
 		right: 0;
