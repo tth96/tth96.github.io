@@ -15,7 +15,10 @@
 	#backtotop{
 		right: 5px;
 	}
-
+	.navbar-light .navbar-nav .a-block{
+		font-size: 13px;
+	}
+	
 }
 
 
@@ -26,7 +29,6 @@
 	/*Chon 4 phan tu dau tien*/
 	.content-item .item.col-lg-3:nth-child(-n + 4) {
 		margin-top: 0;
-
 	}
 }
 @media (min-width: 768px) {
@@ -62,10 +64,10 @@
 		justify-content:center;
 		padding: 10px 0;
 	}
-
-	.navbar{
-		justify-content: flex-end;
+	.navbar p{
+		display: block;
 	}
+
 	.main-slider .slick-dots{
 		right: 0;
 		bottom: 0;
