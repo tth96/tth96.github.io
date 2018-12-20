@@ -18,7 +18,13 @@
 	.navbar-light .navbar-nav .a-block{
 		font-size: 13px;
 	}
-	
+	.block-user-img{
+		display: block;
+	}
+	.content-support{
+		margin: 0;
+		margin-top: 15px;
+	}
 }
 
 
@@ -53,9 +59,6 @@
 		margin: 0 auto;
 		display: block;
 		width: 100%;
-	}
-	.phone-number img{
-		display: none;
 	}
 	.logo{
 		display: block;
