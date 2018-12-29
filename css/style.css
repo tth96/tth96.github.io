@@ -17,7 +17,6 @@ img {
 	max-width: 100%;
 }
 .middle-header .row{
-	width: 100%;
 	font-size: 0;
 
 }
@@ -334,10 +333,6 @@ img {
 	position: relative;
 	padding: 9px 10px;
 }
-.middle-header .row{
-	margin-left: 0;
-
-}
 .title-content-left span{
 	color: #fff;
 	font-size: 15px;
@@ -555,6 +550,7 @@ img {
 	background-color: #fff;
 }
 #backtotop{
+	display: none;
 	border-radius: 1px;
 	cursor: pointer;
 	width: 35px;

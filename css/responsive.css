@@ -75,9 +75,6 @@
 	}
 }
 @media (max-width: 768px){
-	.wrapper0.col-12{
-		padding: 0;
-	}
 	.find{
 		display: block;
 		justify-content:center;
