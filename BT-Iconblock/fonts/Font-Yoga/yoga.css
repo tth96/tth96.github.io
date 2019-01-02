@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Yoga';
+  src:  url('fonts/Yoga.eot?71b6l1');
+  src:  url('fonts/Yoga.eot?71b6l1#iefix') format('embedded-opentype'),
+    url('fonts/Yoga.ttf?71b6l1') format('truetype'),
+    url('fonts/Yoga.woff?71b6l1') format('woff'),
+    url('fonts/Yoga.svg?71b6l1#Yoga') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="jogy-"], [class*=" jogy-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Yoga' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jogy-lotus-2:before {
+  content: "\e904";
+}
+.jogy-icon-title-01:before {
+  content: "\e900";
+}
+.jogy-icon-title-02:before {
+  content: "\e901";
+}
+.jogy-icon-title-03:before {
+  content: "\e902";
+}
+.jogy-icon-title-04:before {
+  content: "\e903";
+}
+.jogy-repeat:before {
+  content: "\e971";
+}
+.jogy-speaker:before {
+  content: "\e972";
+}
+.jogy-paperclip:before {
+  content: "\e973";
+}
+.jogy-quotations:before {
+  content: "\e974";
+}
+.jogy-burner:before {
+  content: "\e975";
+}
+.jogy-chakra:before {
+  content: "\e976";
+}
+.jogy-chakra-1:before {
+  content: "\e977";
+}
+.jogy-chakra-2:before {
+  content: "\e978";
+}
+.jogy-chakra-3:before {
+  content: "\e979";
+}
+.jogy-flower3:before {
+  content: "\e97a";
+}
+.jogy-incense:before {
+  content: "\e97b";
+}
+.jogy-lotus:before {
+  content: "\e97c";
+}
+.jogy-lotus-1:before {
+  content: "\e97d";
+}
+.jogy-om:before {
+  content: "\e97e";
+}
+.jogy-om-1:before {
+  content: "\e97f";
+}
+.jogy-stones:before {
+  content: "\e980";
+}
+.jogy-teapot:before {
+  content: "\e981";
+}
+.jogy-yoga:before {
+  content: "\e982";
+}
+.jogy-yoga-1:before {
+  content: "\e983";
+}
+.jogy-man-doing-pushups:before {
+  content: "\e984";
+}
+.jogy-man-flexing-knees-with-arms-up:before {
+  content: "\e985";
+}
+.jogy-man-flexing-waist:before {
+  content: "\e986";
+}
+.jogy-man-flexing-waist-down:before {
+  content: "\e987";
+}
+.jogy-man-flexing-waist-to-feet:before {
+  content: "\e988";
+}
+.jogy-man-laying-on-his-back-with-his-knees-on-his-chest:before {
+  content: "\e989";
+}
+.jogy-man-on-floor-flexing-backwards:before {
+  content: "\e98a";
+}
+.jogy-man-on-his-knees:before {
+  content: "\e98b";
+}
+.jogy-man-on-his-knees-stretching-arms-on-floor:before {
+  content: "\e98c";
+}
+.jogy-man-on-his-knees-stretching-back:before {
+  content: "\e98d";
+}
+.jogy-man-on-his-knees-stretching-side-view:before {
+  content: "\e98e";
+}
+.jogy-man-on-his-knees-with-head-on-floor:before {
+  content: "\e98f";
+}
+.jogy-man-on-squat-position-turning-waist:before {
+  content: "\e990";
+}
+.jogy-man-on-the-floor-flexing-body:before {
+  content: "\e991";
+}
+.jogy-man-sitting-on-the-floor-stretching-leg-and-waist:before {
+  content: "\e992";
+}
+.jogy-man-squatting:before {
+  content: "\e993";
+}
+.jogy-man-standing-on-his-right-leg-stretching-left-leg-and-right-arm:before {
+  content: "\e994";
+}
+.jogy-man-standing-on-one-leg:before {
+  content: "\e995";
+}
+.jogy-man-standing-on-right-leg-stretching-leg-and-arms:before {
+  content: "\e996";
+}
+.jogy-man-stretching-back:before {
+  content: "\e997";
+}
+.jogy-man-stretching-both-arms-and-legs:before {
+  content: "\e998";
+}
+.jogy-man-stretching-left-leg-and-bending-waist:before {
+  content: "\e999";
+}
+.jogy-man-stretching-leg-and-arms:before {
+  content: "\e99a";
+}
+.jogy-man-stretching-legs-and-flexing-body:before {
+  content: "\e99b";
+}
+.jogy-man-stretching-legs-and-waist:before {
+  content: "\e99c";
+}
+.jogy-man-supporting-himself-on-one-arm-and-stretching-right-arm:before {
+  content: "\e99d";
+}
+.jogy-man-up-flexing-to-right:before {
+  content: "\e99e";
+}
+.jogy-woman-bending-waist-to-feet-with-stretching-leg:before {
+  content: "\e99f";
+}
+.jogy-woman-flexing-body:before {
+  content: "\e9a0";
+}
+.jogy-woman-flexing-waist-to-feet:before {
+  content: "\e9a1";
+}
+.jogy-woman-honding-her-body-with-arms-and-legs:before {
+  content: "\e9a2";
+}
+.jogy-woman-laying-down-lifting-head:before {
+  content: "\e9a3";
+}
+.jogy-woman-laying-on-the-floor-stretching-right-leg:before {
+  content: "\e9a4";
+}
+.jogy-woman-lifting-left-leg:before {
+  content: "\e9a5";
+}
+.jogy-woman-on-her-knees-looking-up:before {
+  content: "\e9a6";
+}
+.jogy-woman-on-her-knees-stretching-arms:before {
+  content: "\e9a7";
+}
+.jogy-woman-on-lotus-position-front-view:before {
+  content: "\e9a8";
+}
+.jogy-woman-sitting-on-the-floor-stretching-head:before {
+  content: "\e9a9";
+}
+.jogy-woman-sitting-on-the-floor-stretching-left-leg:before {
+  content: "\e9aa";
+}
+.jogy-woman-standing-on-her-arms:before {
+  content: "\e9ab";
+}
+.jogy-woman-standing-on-one-leg-lifting-left-leg:before {
+  content: "\e9ac";
+}
+.jogy-woman-standing-on-right-leg-with-left-leg-up:before {
+  content: "\e9ad";
+}
+.jogy-woman-stretching-and-flexing-legs-with-arms-up:before {
+  content: "\e9ae";
+}
+.jogy-woman-stretching-arms-and-flexing-legs:before {
+  content: "\e9af";
+}
+.jogy-woman-stretching-back:before {
+  content: "\e9b0";
+}
+.jogy-woman-stretching-her-body-on-the-floor:before {
+  content: "\e9b1";
+}
+.jogy-woman-stretching-left-leg:before {
+  content: "\e9b2";
+}
+.jogy-woman-stretching-on-floor:before {
+  content: "\e9b3";
+}
+.jogy-woman-upside-down-stretching-body:before {
+  content: "\e9b4";
+}
+.jogy-woman-with-left-leg-up-and-flexed:before {
+  content: "\e9b5";
+}
+
