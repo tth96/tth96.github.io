@@ -2,7 +2,7 @@ jQuery(function($){
 	"use strict";
 	$(document).ready(function(){
 		$('.iconblock').slick({
-		infinite: false,
+		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: true,
