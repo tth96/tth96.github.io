@@ -1,0 +1,19 @@
+@media (max-width: 998px){
+	.content-header{
+	padding-left: 200px;
+	padding-right: 200px;
+	}
+}
+@media (max-width: 768px){
+	.content-header{
+		padding: 0;
+	}
+	.date-img-block span{
+		font-size: 11px;
+	}
+	.date-img-block{
+		top: 16px;
+    	left: -9px;
+	}
+}
+
