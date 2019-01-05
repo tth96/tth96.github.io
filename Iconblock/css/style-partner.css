@@ -3,9 +3,6 @@
 	padding: 0;
 	margin: 0;
 }
-.container{
-	max-width: 1200px;
-}
 body{
 	font-family: 'Lato', sans-serif;
 	line-height: 1.85;
@@ -21,12 +18,15 @@ h5,h6,p{
 a{
 	text-decoration: none;
 }
-.header{
-	margin-top: 70px;
+.header-post,
+.header-partner{
+	margin-top: 50px;
 }
-.content{
+.content-post,
+.content-partner{
 	margin-top: 70px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+
 }
 .top-title-header {
 	font-family: 'Euphoria Script', cursive;
@@ -93,11 +93,11 @@ a{
 	
 
 }
-.icon-partner .icon-block img{
+.icon-partner .icon-block-partner img{
 	max-width: 90px;
 	height: 65px;
 }
-.icon-partner .icon-block{
+.icon-partner .icon-block-partner{
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -176,7 +176,7 @@ a{
 	font-size: 14px;
 	padding: 15px 0;
 }
-.read-more a span{
+.read-more01 a span{
 	font-size: 14px;
 	color: #2b3a58;
 	font-weight: 700;
@@ -223,22 +223,22 @@ a{
 	padding: 5px 0;
 
 }
-.read-more a span{
+.read-more01 a span{
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 10px;
 }
-.read-more{
+.read-more01{
 	width: calc(100% - 86px);
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
 	padding-right: 20px;
 }
-.read-more a span:hover{
+.read-more01 a span:hover{
 	font-weight: 900;
 }
-.read-more a:after {
+.read-more01 a:after {
 	border-radius: 100%;
 	background-color: #26bbec;
 	padding-left: 5px;
