@@ -162,7 +162,7 @@ a{
 	text-decoration: none;
 }
 .content-product a:hover .title-product{
-	font-size: 19px;
+	color: #0ba2d2;
 }
 .title-product{
 	text-transform: uppercase;
@@ -176,14 +176,7 @@ a{
 	font-size: 14px;
 	padding: 15px 0;
 }
-.read-more01 a span{
-	font-size: 14px;
-	color: #2b3a58;
-	font-weight: 700;
-	text-decoration: none;
-	display: block;
-	text-align: right;
-}
+
 
 .fz0{
 	font-size: 0;
@@ -223,22 +216,30 @@ a{
 	padding: 5px 0;
 
 }
-.read-more01 a span{
+/*#rm01 a span{
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 10px;
 }
-.read-more01{
+#rm01 a span{
+	font-size: 14px;
+	color: #2b3a58;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	text-align: right;
+}
+#rm01{
 	width: calc(100% - 86px);
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
 	padding-right: 20px;
 }
-.read-more01 a span:hover{
+#rm01 a span:hover{
 	font-weight: 900;
 }
-.read-more01 a:after {
+#rm01 a:after {
 	border-radius: 100%;
 	background-color: #26bbec;
 	padding-left: 5px;
@@ -253,4 +254,4 @@ a{
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
-}
+}*/
