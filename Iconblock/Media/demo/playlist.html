@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MediaElement.js 3.0 - Playlist Plugin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+	<link rel="stylesheet" href="../dist/playlist/playlist.css">
+</head>
+<body>
+<div id="container">
+
+	<div class="media-wrapper">
+		<audio id="player2" preload="none" controls width="750">
+			<source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
+
+		</audio>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+<script src="../dist/playlist/playlist.js"></script>
+<script>
+	var mediaElements = document.querySelectorAll('audio');
+
+	for (var i = 0, total = mediaElements.length; i < total; i++) {
+		new MediaElementPlayer(
+			mediaElements[i], 
+			{
+				//features: ['playpause', 'prevtrack' ,'nexttrack', 'current', 'progress', 'duration', 'volume', 'playlist', 'shuffle', 'loop', 'fullscreen'],
+				features: ['playpause', 'current', 'progress', 'duration', 'loop' ,'volume' ],
+			}
+		);
+	}
+</script>
+<!--
+	Khi dung plugin
+		1. Nhung file css can thiet
+		2. Nhung file javascript can thiet
+			=> Doc document, source code mau, ...
+	Muon biet file nao la file can thiet -> Xoa lan luot tung file. 
+-->
+</body>
+</html>

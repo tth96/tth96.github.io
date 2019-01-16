@@ -30,7 +30,10 @@ display: none;}
     box-sizing: border-box;
     
 }
-
+/*
+Cong ty lam Outsource
+Cong ty lam Product
+*/
 .clearfix::after {
     content: "";
     display: table;

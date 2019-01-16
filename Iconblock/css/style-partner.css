@@ -9,6 +9,12 @@ body{
 	font-size: 14px;
 	color: #646a7a;
 }
+.container{
+	max-width: 1200px;
+}
+.mg100 .row .item:first-child{
+	margin-top: 0;
+}
 img{
 	max-width: 100%;
 }
@@ -75,8 +81,6 @@ a{
 	margin-top: 40px;
 }
 .content .item{
-	padding-left: 15px;
-	padding-right: 15px;
 	margin-top: 10px;
 }
 .icon-partner{
@@ -90,8 +94,9 @@ a{
 }
 .icon-partner:hover{
 	background-color: rgba(92,202,237,.8);
-	
-
+}
+.mg100{
+	margin-top: 100px;
 }
 .icon-partner .icon-block-partner img{
 	max-width: 90px;
@@ -123,14 +128,20 @@ a{
 }
 .img-block:before{
 	content: '';
-	padding-top: 80%;
+	padding-top: 50%;
 	display: block;
 }
 .img-block img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.img-block iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -214,44 +225,262 @@ a{
 .bottom-product{
 	background-color: #f8f8f8;
 	padding: 5px 0;
-
 }
-/*#rm01 a span{
-	display: inline-block;
-	vertical-align: middle;
-	padding-right: 10px;
+.wrapper-left{
+	padding: 0;	
 }
-#rm01 a span{
+.search form input{
+	background-color: #f8f8f8;
+	border: none;
+	width: 100%;
+	padding: 7.5px 70px 7.5px 20px;
+	font-size: 14px;
+}
+.search{
+	margin-bottom: 50px;
+}
+#find{
+	position: relative;
+}
+.search #find a:before{
+	content: "\f002";
+	font-family: "Font Awesome 5 Free";
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right:20px;
+	color: #989898;
+}
+.search #find a:hover:before{
+	color: #888787;
+}
+.wrapper-category{
+	margin:40px 0;
+}
+.wrapper-category ul li a span{
+	float: right;
+}
+.wrapper-category ul li a{
 	font-size: 14px;
 	color: #2b3a58;
 	font-weight: 700;
-	text-decoration: none;
+}
+.wrapper-category ul li a:hover{
+	color: #26bbec;
+}
+.wrapper-category ul li{
+	list-style-type: none;
+	padding: 10px 0;
+}
+.wrapper-right h5{
+	color: #2b3a58;
+	font-weight: 700;
+	font-size: 16pt;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.wrapper-right h5:after{
+	content: '';
 	display: block;
-	text-align: right;
-}
-#rm01{
-	width: calc(100% - 86px);
-	display: inline-block;
-	vertical-align: middle;
-	text-align: right;
-	padding-right: 20px;
-}
-#rm01 a span:hover{
-	font-weight: 900;
-}
-#rm01 a:after {
-	border-radius: 100%;
+	width: 50px;
+	height: 1px;
 	background-color: #26bbec;
-	padding-left: 5px;
-	padding-right: 6px;
-	padding-top: 3px;
-	padding-bottom: 2px;
-	font-size: 6px;
-	color: #fff;
-	content: "\f067";
-	font-weight: 900;
-	font-family: "Font Awesome 5 Free";
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 5px;
-}*/
+	margin-left: 10px;
+}
+
+.wrapper-category ul li:before{
+	content: "\f101";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 700;
+	font-size: 12px;
+	padding-right: 8px;
+	color: #26bbec;
+}
+.wrapper-category ul li:not(:last-child){
+	border-bottom: 1px solid #e4e4e4;
+}
+.fz14{
+	font-size: 14px;
+}
+.img-latest{
+	display: inline-block;
+	position: relative;
+	width: 46%;
+}
+.img-latest:before{
+	padding-top: 60%;
+	display: block;
+	content: '';
+
+}
+.img-latest img{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.content-latest{
+	display: inline-block;
+	width: 54%;
+	padding-left: 10px;
+	vertical-align: top;
+}
+#player2{
+	position: absolute;
+}
+#customaudio:before{
+	content: '';
+	padding-top: 150px;
+	display: block;
+}
+.customAudio{
+	width: 100% !important;
+	height: 100% !important;
+	top: 0;
+    position: absolute;
+    min-height: 100% !important;
+   	background-color: #354360;
+}
+
+.customControls{
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+    padding-left: 70px;
+	left: 50%;
+	background-image: none !important;
+}
+.mejs__time-total.mejs__time-slider{
+	height: 4px;
+	border-radius: 0px;
+	margin: 0;
+}
+.mejs__time-rail.custom-time-rail{
+	top: 50%;
+	transform: translateY(-50%);
+	height: 4px;
+	padding-left: 13px;
+}
+.mejs__time.mejs__duration-container{
+	position: absolute;
+	right: 103px;
+	top: auto;
+	bottom: 0px;
+	height: auto;
+	font-size: 14px;
+
+}
+.mejs__time.mejs__currenttime-container{
+	position: absolute;
+	padding: 0;
+	height: auto;
+	top: auto;
+	bottom: 0px;
+	left: 138px;
+	font-size: 14px;
+
+}
+.custom-time-rail{
+	padding-top: 0;
+	width: 100%
+}
+
+.mejs__button.mejs__playpause-button.mejs__play{
+	background-color: #5d6980;
+	border: 1px solid #fff;
+    width: 60px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+}
+.mejs__button.mejs__playpause-button.mejs__play button{
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+.mejs__button.mejs__loop-button.mejs__loop-off{
+	padding-left: 21px;
+
+}
+.mejs__button.mejs__playpause-button.mejs__pause{
+	width: 60px;
+    height: 48px;
+}
+.mejs__time-loaded{
+	height: 4px;
+}
+.mejs__time-current{
+	height: 4px;
+}
+.mejs__time-hovered{
+	height: 4px;
+}
+.mejs__time-handle-content{
+	height: 4px;
+	width: 4px;
+	top: -6px;
+}
+.mejs__button.mejs__loop-button.mejs__loop-on{
+	padding-left:21px;
+}
+.mejs__button.mejs__volume-button.mejs__mute,
+.mejs__button.mejs__volume-button.mejs__unmute{
+	left: 30px;
+}
+.mejs__horizontal-volume-slider{
+	pointer-events: none;
+	opacity: 0;
+	top: 32px;
+}
+.customplayvideo{
+	color: #fff;
+	font-size: 45px;
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 54%;
+}
+.customvideo01{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    border-radius: 50%;
+    border: 2px solid #fdfdfd;
+    cursor: pointer;
+	background-color: transparent;
+	background-image: url(../images/Ellipse-9.png);
+}
+.mejs__horizontal-volume-total{
+	background: rgba(50, 50, 50, 0.6);
+    border-radius: 2px;
+    font-size: 1px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 73px;
+    left: -22px;
+    height: 5px;
+    top: 7px;
+}
+.mejs__horizontal-volume-current{
+
+    left: 0px;
+    width: 100%;
+    height: 5px;
+   
+}

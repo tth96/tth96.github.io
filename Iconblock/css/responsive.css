@@ -1,4 +1,4 @@
-@media (max-width: 998px){
+@media (max-width: 992px){
 	.content-header{
 	padding-left: 200px;
 	padding-right: 200px;
@@ -15,5 +15,29 @@
 		top: 16px;
     	left: -9px;
 	}
+	.mejs__time.mejs__currenttime-container{
+		left: 136px !important;
+	}
+	.mejs__time.mejs__duration-container{
+		right: 103px !important;
+	}
 }
-
+@media (max-width: 992px){
+	.mejs__time.mejs__currenttime-container{
+		left: 128px;
+	}
+	.mejs__time.mejs__duration-container{
+		right: 91px;
+	}
+}
+@media (max-width: 488px){
+	.mejs__button.mejs__playpause-button.mejs__play{
+		height:37px;
+	}
+	.mejs__time.mejs__currenttime-container{
+		left: 128px !important;
+	}
+	.mejs__time.mejs__duration-container{
+		right: 91px !important;
+	}
+}
