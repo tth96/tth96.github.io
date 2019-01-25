@@ -23,15 +23,21 @@ img {
 	padding-right: 15px;
 	margin-top: 15px;
 }
-.gallery{
+.grid-item{
 	position: relative;
 }
-.gallery:before{
+.grid-item--height2:before{
 	content: '';
-	padding-top: 70%;
+	padding-top: 160% !important;
 	display: block;
 }
-.gallery img{
+.grid-item:before{
+	content: '';
+	padding-top: 80%;
+	display: block;
+}
+.grid-item img,
+.grid-item--height2 img{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,11 +68,12 @@ img {
 }
 .grid-item {
 	width: 33.333333%;
-	display: inline-block;
+	display: block;
 	font-size: 14px;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-top: 10px;
+	vertical-align: top;
  }
 .grid-item--width2 { width: 50%; }
-
+.grid-item--width3 { width: 66.66666%; }
+.grid-sizer {
+  width: 20%;
+}

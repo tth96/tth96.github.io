@@ -260,6 +260,93 @@ a:hover {
 
 
 
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  height: auto;
+/*  width: 100px;
+  height: 100padding: 15px;px;*/
+  position: relative;
+  overflow: hidden;
+
+
+}
+.grid-item--width2:before{
+	content: '';
+	padding-top: 80%;
+	display: block;
+
+}
+/*.grid-item .img-block-gallery{
+	position: relative;
+	overflow: hidden;
+
+}*/
+.dh-overlay {
+  background: rgba(52,73,94,.65);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+  color: #fff;
+
+}
+
+.grid-item .img-block-gallery img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	object-fit: cover;
+}
+.grid-item--width2 { 
+	width: 33.333%;
+}
+.grid-item--width3 { 
+	width: 66.666%;
+
+}
+.grid-item--width3:before{
+	content: '';
+	padding-top: 40%;
+	display: block;
+}
+.grid-item--height2:before{
+	content: '';
+	padding-top: 160%;
+	display: block;
+}
+.dh-overlay a{
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+}
+.dh-overlay a img{
+	margin-left: 10px;
+	margin-top: 10px;
+	max-width: 30px;
+	max-height: 30px;
+	object-fit: cover;
+
+	
+	
+}
 
 
 

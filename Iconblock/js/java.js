@@ -1,6 +1,16 @@
 jQuery(function ($) {
 	"use strict";
 	$(document).ready(function () {
+
+		$('.grid-item').directionalHover({
+			 overlay: "dh-overlay",
+			 easing: "swing",
+			 speed: 400
+
+			});
+
+
+
 		$('.comp-slider').slick({
 			infinite: true,
 			slidesToShow: 3,
@@ -31,7 +41,15 @@ jQuery(function ($) {
 					}
 				}
 			]
-
+		});
+		// $('.grid').isotope({
+ 	// 		itemSelector: '.grid-item',
+ 	// 		masonry:{
+  //     		columnWidth: 100
+ 	// 		}
+		// });
+		$('[data-fancybox="gallery"]').fancybox({
+			animationEffect: "zoom-in-out",
 		});
 
 	});

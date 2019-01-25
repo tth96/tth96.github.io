@@ -22,6 +22,13 @@ $(document).ready(function(){
 	   filter: '.halogen'
 		});
 	})
+	$('.grid').isotope({
+	  	itemSelector: '.grid-item',
+	 	percentPosition: true,
+	 	masonry: {
+	    columnWidth: '.grid-sizer'
+  	}
+	})
 });
 $(window).on('load', function(){
 	});
