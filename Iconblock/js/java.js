@@ -52,6 +52,11 @@ jQuery(function ($) {
 			animationEffect: "zoom-in-out",
 		});
 
+		// $('.tab-a').mouseover(function(){
+		// 	$('.tab-a').addClass("hover-a");
+		// 	$('.tab-a').add("div","active-img");
+		// })
+
 	});
 	var checkSlideResponsive = false; //Chua gan slick
 	function runSlideResponsive() {
@@ -102,7 +107,6 @@ jQuery(function ($) {
 	$(window).on('resize', function () {
 
 		runSlideResponsive();
-		console.log(width, widthWindow);
 		//console.log(document.getElementsByClassName("slider-responsive")[0].getAttribute("data-width"));
 
 
