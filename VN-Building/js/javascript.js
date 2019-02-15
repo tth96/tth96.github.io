@@ -24,6 +24,37 @@ jQuery(function($){
  			dots: true,
  			arrows: true,
 		});
+
+		$('.brand-silde').slick({
+			slidesToShow: 6,
+			autoplay: true,
+ 			autoplaySpeed:4000,
+ 			arrows: true,
+ 				responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 4,
+			        slidesToScroll: 1,
+			        infinite: true,
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			  ]
+		});
 		$('#showmenu-1').click(function(){
             $('#menu-js-1').slideToggle("fast");
         });
@@ -37,7 +68,9 @@ jQuery(function($){
 		// 	$(this).toggleClass("rotate-button");
 		// 	return;	
 		// })
-      
+     	$('.chat-online').click(function(){
+     		alert('Chưa có bảng chat');
+     	})
 
        //   $('.title-menu').click(function(){
 		     // $('.menu-responsive').addClass(".dp-block");

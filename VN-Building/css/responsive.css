@@ -1,4 +1,41 @@
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 991px){
+	/*.product .content-product .item.col-20:nth-child(5n+1){
+		padding-left: 10px;
+	}
+	.product .content-product .item.col-20:nth-child(5n+5){
+		padding-right: 10px;
+	}
+	.product .content-product .item.col-20:nth-child(-n+5){
+		margin-top: 0px;
+	}
+	.product .content-product .item.col-rp-4:nth-child(-n+4){
+		margin-top: 30px;
+	}
+	.product .content-product .item.col-rp-4:nth-child(4n+1){
+		padding-left: 0;
+	}
+	.product .content-product .item.col-rp-4:nth-child(4n+4){
+		padding-right: 0;
+	}*/
+	.bg-footer .logo-content-footer .logo-footer{
+		transform: translateY(0%);
+	}
+	.bg-footer .logo-content-footer .item{
+		margin-bottom: 30px;
+	}
+	.bg-bottom-menu .nav-menu ul{
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	.product .content-product{
+		padding: 0 5px;
+	}
+	.product .project .content-product .item-product a{
+		text-align: left;
+	}
+	.product .content-product .item-product a{
+		text-align: center;
+	}
 	.container{
 		padding: 0;
 	}
@@ -46,17 +83,14 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.product .content-product .item.col-rp-4:nth-child(-n+4){
-		margin-top: 30px ;
+	.product .more .banner .text-banner h4{
+		font-size: 26px;
 	}
-	.product .content-product .item.col-rp-4:nth-child(4n+1){
-		padding-left: 0 ;
-	}
-	.product .content-product .item.col-rp-4:nth-child(4n+4){
-		padding-right: 0 ;
+	.product .more .banner .text-banner span{
+		font-size: 16px;
 	}
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 	/*.hotline{
 		display: block;
 		text-align: center;
@@ -87,18 +121,36 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+/*	.product .content-product .item.col-rp-4:nth-child(-n+4){
+		margin-top: 0;
+	}
+	.product .content-product .item.col-rp-4:nth-child(4n+1){
+		padding-left: 10px;
+	}
+	.product .content-product .item.col-rp-4:nth-child(4n+4){
+		padding-right: 10px;
+	}
 	.product .content-product .item.col-rp-3:nth-child(-n+3){
-		margin-top: 30px ;
+		margin-top: 30px;
 	}
 	.product .content-product .item.col-rp-3:nth-child(3n+1){
 		padding-left: 0 ;
 	}
 	.product .content-product .item.col-rp-3:nth-child(3n+3){
 		padding-right: 0 ;
+	}*/
+	.product .more .banner .text-banner h4{
+		font-size: 22px;
+	}
+	.product .more .banner .text-banner span{
+		font-size: 12px;
 	}
 }
 @media only screen and (max-width: 576px){
 	.contact{
+		display: block;
+	}
+	.menu-bt .nav-menu ul li {
 		display: block;
 	}
 	.contact .icon-contact{
@@ -116,23 +168,41 @@
 		display: block;
 		text-align: center;
 	}	
-	.product .content-product .item.col-rp-2:nth-child(2n+1){
+	.product .more .banner .text-banner h4{
+		font-size: 18px;
+	}
+	.product .more .banner .text-banner span{
+		font-size: 12px;
+	}	
+	
+	/*.product .content-product .item.col-rp-3:nth-child(-n+3){
+		margin-top: 0;
+	}
+	.product .content-product .item.col-rp-3:nth-child(3n+1){
+		padding-left: 10px;
+	}
+	.product .content-product .item.col-rp-3:nth-child(3n+3){
+		padding-right: 10px;
+	}
+	.product .content-product .item.col-rp-1:nth-child(-n+1){
+		margin-top: 30px;
+	}
+	.product .content-product .item.col-rp-1:nth-child(1n+1){
 		padding-left: 0 ;
 	}
-	.product .content-product .item.col-rp-2:nth-child(2n+2){
+	.product .content-product .item.col-rp-1:nth-child(1n+1){
 		padding-right: 0 ;
-	}
-	.col-rp-2{
-		width: 50%;
+	}*/
+	.col-rp-1{
+		width: 100%;
 		display: flex;
 		margin-bottom: 30px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.product .content-product .item.col-rp-2:nth-child(-n+2){
-		margin-top: 30px ;
-	}
-	
+	.product .content-product .item-product{
+		width: 100%;
+	}	
 }
 @media only screen and (max-width: 496px){
 	.frames-support ul li:first-child{
@@ -144,20 +214,10 @@
 		border: none;	
 		padding: 0;
 	}
-	.col-rp-1{
-		width: 100%;
-		display: flex;
-		margin-bottom: 30px;
-		padding-left: 10px;
-		padding-right: 10px;
+	.product .more .banner .text-banner h4{
+		font-size: 16px;
 	}
-	.product .content-product .item.col-rp-1{
-		padding-left: 15px ;
-	}
-	.product .content-product .item.col-rp-1{
-		padding-right: 15px ;
-	}
-	.product .content-product .item.col-rp-1:nth-child(-n+1){
-		margin-top: 30px ;
-	}
+	.product .more .banner .text-banner span{
+		font-size: 8px;
+	}	
 }
