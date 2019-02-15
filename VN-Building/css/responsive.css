@@ -1,3 +1,19 @@
+@media only screen and (max-width: 1024px){
+		.nav-menu ul li a{
+		font-size: 13px;
+	}
+	.item-menu-left{
+		padding-left: 0;
+
+	}
+	.item-menu-right{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.frames-support ul{
+		text-align: center;
+	}
+}
 @media only screen and (max-width: 991px){
 	/*.product .content-product .item.col-20:nth-child(5n+1){
 		padding-left: 10px;
