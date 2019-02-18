@@ -23,6 +23,14 @@ jQuery(function($){
  			autoplaySpeed:4000,
  			dots: true,
  			arrows: true,
+ 				responsive: [
+ 				 {
+			      breakpoint: 768,
+			      settings: {
+			        arrows: false,
+			      }
+			    }
+			    ]
 		});
 
 		$('.brand-silde').slick({
@@ -44,6 +52,7 @@ jQuery(function($){
 			      settings: {
 			        slidesToShow: 2,
 			        slidesToScroll: 1,
+			        arrows: false,
 			      }
 			    },
 			    {
@@ -92,12 +101,19 @@ jQuery(function($){
  		$('#toggle-menu-rs').toggleClass('trs-click-menu');
   		$('#toggle-menu-rs').on('click',function(){
   			$('.wrapper-menu-responsive').toggleClass('hidden');
-  			$('#toggle-menu-rs').toggleClass('trs-click-menu');
-  			$('.icon-custom1').toggleClass('trs-icon1');
- 			$('.icon-custom2').toggleClass('trs-icon2');
- 			$('.icon-custom3').toggleClass('trs-icon3');
+  			$('#toggle-menu-rs').hide();
+  		// 	$('.icon-custom1').toggleClass('trs-icon1');
+ 			// $('.icon-custom2').toggleClass('trs-icon2');
+ 			// $('.icon-custom3').toggleClass('trs-icon3');
+ 			$('body').css('overflow','hidden');
+ 
+
   		})
-  		
+  		$('#click-close-menu').on('click',function(){
+  			$('.wrapper-menu-responsive').toggleClass('hidden');
+  			$('#toggle-menu-rs').show("slow");
+  			$('body').css('overflow','auto');
+  		})
 
 
   			
