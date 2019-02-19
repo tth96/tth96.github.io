@@ -33,6 +33,9 @@
 	.product .content-product .item.col-rp-4:nth-child(4n+4){
 		padding-right: 0;
 	}*/
+	.silde-s .wrapper-silde{
+		padding-right: 0;
+	}
 	.bg-footer .logo-content-footer .logo-footer{
 		transform: translateY(0%);
 	}
@@ -107,6 +110,9 @@
 	}
 	.nav-menu ul li a{
 		font-size: 15px;
+	}
+	.row{
+		margin: 0;
 	}
 }
 @media only screen and (max-width: 767px){
