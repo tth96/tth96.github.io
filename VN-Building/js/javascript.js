@@ -106,6 +106,7 @@ jQuery(function($){
  			// $('.icon-custom2').toggleClass('trs-icon2');
  			// $('.icon-custom3').toggleClass('trs-icon3');
  			$('body').css('overflow','hidden');
+      $('body').addClass('open-menu');
  
 
   		})
@@ -113,6 +114,8 @@ jQuery(function($){
   			$('.wrapper-menu-responsive').toggleClass('hidden');
   			$('#toggle-menu-rs').show("slow");
   			$('body').css('overflow','auto');
+        $('body').removeClass('open-menu');
+
   		})
 
 
