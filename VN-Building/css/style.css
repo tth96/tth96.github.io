@@ -973,7 +973,7 @@ ul{
 }
 .product .servies .item{
 	margin-bottom: 25px;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 .product .servies .item-product a{
 	border-bottom: none;
@@ -1561,7 +1561,7 @@ div[class*="contact-"]{
     
 .servies .slick-prev.slick-arrow{
     z-index: 6;
-    right: 20px;
+    right: 36px;
     top: -50px;
     left: auto;
     height: 20px;
@@ -1571,7 +1571,7 @@ div[class*="contact-"]{
 }
 .servies .slick-next.slick-arrow{
     z-index: 6;
-    right: 0;
+    right: 17px;
     top: -50px;
     height: 20px;
     width: 15px;
