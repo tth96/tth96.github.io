@@ -243,9 +243,45 @@
 		padding: 0;
 	}
 	.product .more .banner .text-banner h4{
-		font-size: 16px;
+		font-size: 13px;
+		margin:0;
 	}
 	.product .more .banner .text-banner span{
 		font-size: 8px;
 	}	
+	.silde-block h3{
+		font-size: 20px;
+	}
+	.silde-block h3 span{
+		font-size: 18px;
+	}
+	.product .title .bg-title{
+		width: 100%;
+	}
+	.product .title .bg-title h3{
+		font-size: 20px;
+	}
+	.product .title a{
+		display: block;
+		float: none;
+		text-align: center;
+		margin: 5px;
+	}
+	.product .title a:before{
+		content: '';
+
+	}
+	.silde-s .slide .slick-next.slick-arrow,
+	.silde-s .slide .slick-prev.slick-arrow{
+		display: none !important;
+	}
+	.silde-s .slide .slick-dots li{
+		/*display: none !important;*/
+		width: 15px;
+		height: 15px;
+	}
+	.silde-s .slide .slick-dots li button{
+		width: 15px;
+		height: 15px;
+	}
 }

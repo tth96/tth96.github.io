@@ -28,10 +28,58 @@ jQuery(function($){
 			      breakpoint: 768,
 			      settings: {
 			        arrows: false,
+              dots: false,
 			      }
-			    }
+			    },
+           {
+            breakpoint: 600,
+            settings: {
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+            }
+          }
 			    ]
 		});
+
+    $('.silder-servies').slick({
+       slidesToShow: 3,
+       autoplaySpeed:4000,
+       arrows: true,
+       responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            }
+          }
+        ]
+
+
+    });
 
 		$('.brand-silde').slick({
 			slidesToShow: 6,
