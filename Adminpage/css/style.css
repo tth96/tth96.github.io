@@ -8,14 +8,10 @@
 }
 .header .top{
 	height: 50px;
-	background-image: url(../images/bg_bottom_menu.png);
-	background-repeat: no-repeat;
+	background-color: #9999;
 }
 .img-admin .img{
 	position: relative;
-	width: 100%;
-	height: 150px;
-
 }
 .img-admin .img img{
 	position: absolute;
@@ -25,42 +21,98 @@
 	height: 100%;
 	border-radius: 50%;
 	padding: 10px;
-
+	object-fit: cover;
 }
 .bg-left{
-		background-color: #d88d30d1;
+	background-color: #222d31;
 }
 .img-admin{
-	border-bottom: 2px solid #555555;
+	margin-bottom: 20px;
 }
 .img-admin .img:before{
 	content: '';
 	display: block;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 150px;
-	object-fit: cover;
+	padding-top: 100%
 }
-.img-admin .text h1{
+.title h1{
+	text-align: center;
 	font-size: 20px;
-	color: red;
-	font-weight: bold;
-	text-shadow: 0px 2px 10px #e50ce8;
-	border-radius: 5px;
-    box-shadow: inset 0px 0 15px #0008ff80;
+	color: #edff00;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #b91616;
+    box-shadow: 0px 5px 14px #ffffff80;
     margin: 0;
     padding: 2px;
+    background-color: #1f282d;
 }
 .img-admin .text h3{
 	font-size: 14px;
-	color: #1200ff;
+	color: #fff;
 	margin: 0;
 	font-weight: bold;
-	padding: 5px;		
+	padding: 5px;	
+	text-transform: uppercase;	
 }
 .img-admin .text{
 	text-align: center;
+}
+.bg-left .menu{
+	color: red;
+}
+.bg-left .menu ul{
+	list-style-type: none;
+	margin-left: 15px;
+}
+.bg-left .menu h3,
+.bg-left .menu ul li p{
+	cursor: pointer;
+}
+.content-menu{
+	margin-top: 10px;
+	padding-left: 5px;
+}
+.ulmenu{
+	display: none;
+}
+.right .top{
+	height: 50px;
+	background-color: blue;
+}
+div[class*='col-']{
+	padding: 0;
+}
+.middle{
+	display: flex;
+}
+.img-slide {
+	display: flex;
+	margin-top: 10px;
+}
+.img-slide .slide-img{
+	width: 50%;
+	border: 2px solid #555555;
+}
+.img-slide .slide-img .img-block{
+	position: relative;
+}
+.img-slide .slide-img .img-block img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+.img-slide .slide-img .img-block:before{
+	content: '';
+	padding-top: 80%;
+	display: block;
+}
+.img-slide .slide-img .slick-dots li button{
+	font-size: 14px;
+	background-color: #fff;
+}
+.img-slide .slide-img .slick-dots li button:before{
+	/*content: '1';*/
+	font-size: 18px;
 }

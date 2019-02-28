@@ -19,7 +19,7 @@ jQuery(function($){
 	$(document).ready(function(){
 		$('.slide').slick({
 			slidesToShow: 1,
-			// autoplay: true,
+			autoplay: true,
  			autoplaySpeed:4000,
  			dots: true,
  			arrows: true,
