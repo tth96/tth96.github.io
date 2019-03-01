@@ -11,13 +11,11 @@ jQuery(function($){
 				ulmenu.slideToggle('fast');
 			});
 		});
-		$('.img-slide').slick({
-			slidesToShow: 2,
-			autoplay: true,
-			autoplaySpeed: 4000,
- 			dots: false,
- 			arrows: false,
-		});
+		// $('.img-slide').slick({
+		// 	slidesToShow: 3,
+ 	// 		dots: false,
+ 	// 		arrows: true,
+		// });
 
 
 		// $('#menu01').click(function(){
