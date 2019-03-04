@@ -27,7 +27,7 @@ body{
 }
 .header{
 	background-image: url(../images/background-header.png);
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 .header .menu-header{
 	display: flex;
@@ -121,12 +121,14 @@ body{
 	color: #d9dfeb;
 	font-style: italic;
 }
-.header .text-logo .logo .logo2 .button-text{
-	text-align: center;
-	margin: 30px 0;
-
+.header .text-logo .bg-logo.row{
+	margin: 0 ;
 }
-.header .text-logo .logo .logo2 .button-text button{
+.header .text-logo .bg-logo .item-logo .logo .button-text{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.header .text-logo .bg-logo .item-logo .logo .button-text button{
 	border: none;
 	outline: none;
 	color: #fff;
@@ -140,77 +142,112 @@ body{
 	cursor: pointer;
 	text-transform: uppercase;
 }
-.header .text-logo .logo .logo2 .button-text button:hover{
+.header .text-logo .bg-logo .item-logo .logo .button-text button:hover{
 	background-color: #fff;
 	color: #1b1e30;
 	border: 1px solid #fff;
 }
-.header .text-logo .logo .logo2 .img-block {
-	display: flex;
-	justify-content: center;
+.header .text-logo .bg-logo .item-logo .logo .img-block{
+	position: relative;
 }
-.header .text-logo .logo .logo2 .img-block .img-logo{
-	width: 70%;
+.header .text-logo .bg-logo .item-logo .logo .img-block:before{
+	padding-top: 80%;
+	display: block;
+	content: '';
 }
-.header .text-logo .logo .logo2 .img-block .img-logo img{
+.header .text-logo .bg-logo .item-logo .logo .img-block img{
+	height: 100%;
 	width: 100%;
-	height: auto;
-}
-.header .text-logo .logo{
-	position: relative;
-	padding-bottom: 50px;
-}
-.header .text-logo .logo .logo1{
 	position: absolute;
-	top: 0;
-	left: -25%;
-}
-.header .text-logo .logo .logo1 .img-block1{
-	position: relative;
-}
-.header .text-logo .logo .logo1 .img-block1 img{
-	position: absolute;
-}
-.header .text-logo .logo .logo1 .img-block1 #img03{
 	top: 0;
 	left: 0;
-	transform: translateY(130%);
 }
-.header .text-logo .logo .logo1 .img-block1 #img02{
-	top: 10px;
-	transform: translateX(50%);
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps101 .img-block{
+	width: 70%;
+	height: auto;
 }
-.header .text-logo .logo .logo1 .img-block1 #img01{
-	top: 125px;
-	left: -50px;
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps102 .img-block{
+	width: 80%;
+	height: auto;
+	float: right;
 }
-.header .text-logo .logo .logo3{
-	position: absolute;
-	top: 0;
-	right:0;
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps103 .img-block{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
 }
-.header .text-logo .logo .logo3 .img-block3{
+.header .text-logo .bg-logo .item-logo .logo1 .img-block img{
+	height: 100%;
+	width: 100%;
+}
+.header .text-logo .bg-logo .item-logo.cs01{
 	position: relative;
 }
-.header .text-logo .logo .logo3 .img-block3 img{
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps101,
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps102,
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps103{
 	position: absolute;
 }
-.header .text-logo .logo .logo3 .img-block3 #img303{
-    transform: translateY(150%);
-    top: 40px;
-    left: -152px;
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps103{
+	bottom: -30px;
+	left: 10px;
 }
-.header .text-logo .logo .logo3 .img-block3 #img302{
-
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps102{
+	right: -30px;
+	top: 20px;
 }
-.header .text-logo .logo .logo3 .img-block3 #img301{
-	left: -196px;
-	top: 80px;
+.header .text-logo .bg-logo .item-logo .logo1 #cs-ps101{
+	left: -15px;
+	top: 35%;
+	transform: translateY(-50%);
+}
+.header .text-logo .bg-logo .item-logo .logo3 .img-block img{
+	height: 100%;
+	width: 100%;
+}
+.header .text-logo .bg-logo .item-logo.cs03{
+	position: relative;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps301,
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps302,
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps303,
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps304{
+	position: absolute;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps301 .img-block{
+	width: 70%;
+	height: auto;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps302 .img-block{
+	width: 80%;
+	height: auto;
+	float: right;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps303 .img-block{
+	width: 50%;
+	height: auto;
+	float: right;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps304 .img-block{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps304{
+	bottom: 0;
+	left: 0;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps301{
+	left: -20px;
+    top: 80px;
 	z-index: 2;
 }
-.header .text-logo .logo .logo3 .img-block3 #img304{
-	transform: translateY(190%);
-    left: 200px;
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps302{
+	top: 15px;
+}
+.header .text-logo .bg-logo .item-logo .logo3 #cs-ps303{
+	top: 50%;
+	right: 0;
 }
 .creative{
 	margin-top: 100px;
