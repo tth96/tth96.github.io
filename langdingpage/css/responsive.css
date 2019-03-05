@@ -1,0 +1,11 @@
+@media (max-width: 991px){
+	.item-logo.cs01,
+	.item-logo.cs02{
+		display: none;
+	}
+	.header .text-logo .bg-logo .item-logo .logo .img-block:before{
+		content: '';
+		display: block;
+		padding-top: 50% !important;
+	}
+}
