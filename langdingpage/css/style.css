@@ -347,7 +347,7 @@ body{
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.creative .crea-product .wrapper-product .item-product .product .img-product:hover .background .background-01{
+.creative .crea-product .wrapper-product .item-product .product .img-product .background:hover .background-01{
 	opacity: 1;
 	-webkit-transition: all 1s ease;
 	-o-transition: all 1s ease;
