@@ -33,6 +33,21 @@ body{
 	display: flex;
 	padding: 15px 0;
 	justify-content : flex-end;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.header .menu-header.ps-fix{
+	position: fixed;
+	background-color: #3e4552;
+	color: #555555 !important;
+	width: 100%;
+	z-index: 9999;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	justify-content:center;
+	padding: 5px 0;
 }
 .header .menu-header ul{
 	list-style-type: none;
@@ -44,12 +59,19 @@ body{
 .header .menu-header ul li a{
 	text-decoration: none;
 	display: block;
-	color: #333333;
+	color: #333333c7;
 	font-size: 12px;
 	font-weight: bold;
+	text-transform: uppercase;
+}
+.header .menu-header.ps-fix ul li a{
+	color: #cdcec7;
 }
 .header .menu-header ul li a:hover{
 	color: #fff;
+}
+.header .menu-header .menu-hidden{
+	display: none;
 }
 .header .menu-header .input-icon{
 	position: relative;
@@ -300,12 +322,18 @@ body{
 .creative .crea-menu ul li{
 	display: inline-block;
 }
-.creative .crea-menu ul li a{
+.creative .crea-menu ul li p{
 	font-size: 14px;
 	color: #333333;
 	padding: 15px;
 	font-weight: bold;
 	display: block;
+	margin: 0;
+	cursor: pointer;
+}
+.creative .crea-menu ul li p:hover,
+.creative .crea-menu ul li p:focus{
+	text-decoration: underline;
 }
 .creative .crea-product .wrapper-product.row{
 	margin: 0;
@@ -346,12 +374,13 @@ body{
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
+
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background:hover .background-01{
-	opacity: 1;
 	-webkit-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
+
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background{
 	position: absolute;
@@ -359,7 +388,6 @@ body{
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 9999;
 	background-color: #1f1b1b75;
 	opacity: 0;
 	pointer-events: none;
@@ -369,12 +397,13 @@ body{
 	display: flex;
 	align-items:center;
 	justify-content:center;
+	z-index: 20;
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background .background-01{
 	width: 90%;
 	height: 70%;
 	border: 3px solid #fff;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition: all 1s ease-out;
 	-o-transition: all 1s ease-out;
 	transition: all 1s ease-out;
@@ -384,6 +413,7 @@ body{
 	color: #fff;
 	font-size: 26px;
 	pointer-events: none;
+
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background .background-01 p{
 	margin-top: 10px;

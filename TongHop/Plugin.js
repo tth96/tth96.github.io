@@ -15,7 +15,7 @@ jQuery(function($){
 		// Tạo Nút Back to Top
 		var TaoBacktoTop = function(){
     		if($("#backtotop").length > 0){
-			$(window).scroll(function () {
+				$(window).scroll(function () {
 				var e = $(window).scrollTop();
 				var height = $(window).height();
 				console.log(e ,"       ", height);
@@ -26,14 +26,14 @@ jQuery(function($){
 					//$("#backtotop").hide()
 					document.querySelector("#backtotop").style.display = 'none';
 				}
-			});
-			$("#backtotop").click(function () {
+				});
+				$("#backtotop").click(function () {
 				$('body,html').animate({
 					scrollTop: 0
 				})
-			});
+				});
 			}		
-			}
+		}
 		// 
 	});
 });

@@ -1,0 +1,44 @@
+---- Lấy vị trí của phần tử -----
+
+	var e = $('.Class').position();
+	Lấy từ top : e.top;
+	láy ngang : e.left;
+
+---- CÁCH KHAI BÁO JQUERY -----
+
+jQuery(function($){
+	"use strict"
+	$(document).ready(function(){
+
+	});
+	$(window).on('load', function(){
+
+	});
+})
+
+---- Scroll đến vị trí mong muốn (hiện tại là kéo lên trên cùng) ----
+
+	$('body,html').animate({
+					scrollTop: 0 ;
+				})
+		})
+
+----- Tạo Layout Filter -----
+
+- HTML -
+	<div class="grid">
+		<div class="item so1"></div>
+		<div class="item so2"></div>
+		<div class="item so1"></div>
+		<div class="item so4"></div>
+		<div class="item so1"></div>
+		<div class="item so4"></div>
+		<div class="item so1"></div>
+	</div>
+
+- Jquery -
+	$('.grid').isotope({ filter: '.so1' });
+	$('.grid').isotope({ filter: '.so1' });
+	$('.grid').isotope({ filter: '.so4' });
+
+------
