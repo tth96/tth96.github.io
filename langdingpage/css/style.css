@@ -29,7 +29,7 @@ body{
 	background-image: url(../images/background-header.png);
 	padding-bottom: 100px;
 }
-.header .menu-header{
+.menu-header{
 	display: flex;
 	padding: 15px 0;
 	justify-content : flex-end;
@@ -56,18 +56,21 @@ body{
 .header .menu-header ul li{
 	display: inline-block;
 }
-.header .menu-header ul li a{
+.header .menu-header ul li p{
 	text-decoration: none;
 	display: block;
 	color: #333333c7;
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
+	cursor: pointer;
+	margin-bottom: 0;
 }
-.header .menu-header.ps-fix ul li a{
+.header .menu-header.ps-fix ul li p{
 	color: #cdcec7;
+	cursor: pointer;
 }
-.header .menu-header ul li a:hover{
+.header .menu-header ul li p:hover{
 	color: #fff;
 }
 .header .menu-header .menu-hidden{
@@ -98,7 +101,7 @@ body{
     left: 15px;
     cursor: pointer;
 }
-.header .menu-header button{
+.header .menu-header #download-theme{
 	border: none;
 	outline: none;
 	color: #fff;
@@ -111,7 +114,7 @@ body{
 	border-radius: 3px;
 	cursor: pointer;
 }
-.header .menu-header button:hover{
+.header .menu-header #download-theme:hover{
 	background-color: #fff;
 	color: #1b1e30;
 	border: 1px solid #fff;
@@ -122,8 +125,12 @@ body{
 .header .text-logo .text .cs-h3-01{
 	text-align: center;
 	margin-bottom: 40px;
+	display: block;
 }
-.header .text-logo .text .cs-h3-01 h3{
+.header .cs-h3-01{
+	display: none;
+}
+.header .cs-h3-01 h3{
 	font-size: 30px;
 	font-weight: bold;
 	color: #fff;
@@ -374,13 +381,11 @@ body{
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
-
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background:hover .background-01{
 	-webkit-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
-
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background{
 	position: absolute;
@@ -413,7 +418,6 @@ body{
 	color: #fff;
 	font-size: 26px;
 	pointer-events: none;
-
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background .background-01 p{
 	margin-top: 10px;
@@ -430,4 +434,89 @@ body{
 	color: #333333;
 	font-size: 12px;
 	font-weight: bold;
+}
+.click-menu{
+	padding: 0 !important;
+    display: inline-flex;
+    transition-property: opacity,filter;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: none !important;
+    margin: 0;
+    overflow: visible;
+    outline: none;
+    cursor: pointer;
+}
+.click-menu:focus{
+	outline: none;
+	border: none;
+}
+.click-menu-box{
+	width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.click-menu-inner{
+	width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: transform;
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.activemenu .click-menu-inner{
+	transform: rotate(225deg);
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    background-color: #8c8c8c;
+}
+.click-menu-inner:before{
+	content: "";
+    display: block;
+	width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    top: -10px;
+}
+.activemenu .click-menu-inner:before{
+	top: 0;
+    opacity: 0;
+    transition: top .1s ease-out,opacity .1s .12s ease-out;
+    background-color: #8c8c8c;
+}
+.click-menu-inner:after{
+	content: "";
+    display: block;
+	width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    bottom: -10px;
+}
+.activemenu .click-menu-inner:after{
+	bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out,transform .22s .12s cubic-bezier(.215,.61,.355,1);
+    background-color: #8c8c8c;
+}
+.click-menu:hover,
+.click-menu:focus{
+	background-color: transparent !important;
 }
