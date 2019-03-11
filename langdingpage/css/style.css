@@ -5,7 +5,24 @@
 }
 body{
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
+.overhd{
+	overflow: hidden;
+}
+/* .wrapperbefore:before{
+	content: '';
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #1d1a1ab8;
+	opacity: 1;
+	z-index: 30 !important;
+	position: absolute;
+	overflow: hidden;
+} */
 .fz{
 	font-size: 14px;
 }
@@ -180,7 +197,7 @@ body{
 	position: relative;
 }
 .header .text-logo .bg-logo .item-logo .logo .img-block:before{
-	padding-top: 80%;
+	padding-top: 60%;
 	display: block;
 	content: '';
 }
@@ -418,6 +435,10 @@ body{
 	color: #fff;
 	font-size: 26px;
 	pointer-events: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .creative .crea-product .wrapper-product .item-product .product .img-product .background .background-01 p{
 	margin-top: 10px;
@@ -435,88 +456,85 @@ body{
 	font-size: 12px;
 	font-weight: bold;
 }
-.click-menu{
-	padding: 0 !important;
-    display: inline-flex;
-    transition-property: opacity,filter;
-    transition-duration: .1s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: none !important;
-    margin: 0;
-    overflow: visible;
-    outline: none;
-    cursor: pointer;
-}
-.click-menu:focus{
+.op-menu{
+	padding: 0;
+	display: none;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	margin: 0;
+	border:none;
+	cursor: pointer;
 	outline: none;
-	border: none;
+	background-color:transparent;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	margin-left: 10px;
 }
-.click-menu-box{
+.op-menu:focus{
+	outline: none;
+	border:none;
+}
+.wrapper-op-menu{
 	width: 30px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
+	height: 24px;
+	position: relative;
+	display: inline-block;
 }
-.click-menu-inner{
+.icon-op-menu{
 	width: 30px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-    position: absolute;
-    transition-property: transform;
-    display: block;
-    top: 50%;
-    margin-top: -2px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
 }
-.activemenu .click-menu-inner{
+.clo-menu .icon-op-menu{
 	transform: rotate(225deg);
-    transition-delay: .12s;
-    transition-timing-function: cubic-bezier(.215,.61,.355,1);
-    background-color: #8c8c8c;
+	background-color: #8c8c8c;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
 }
-.click-menu-inner:before{
+.icon-op-menu:before{
 	content: "";
-    display: block;
 	width: 30px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: .15s;
-    transition-timing-function: ease;
-    top: -10px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	top: -10px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
 }
-.activemenu .click-menu-inner:before{
+.clo-menu .icon-op-menu:before{
 	top: 0;
-    opacity: 0;
-    transition: top .1s ease-out,opacity .1s .12s ease-out;
-    background-color: #8c8c8c;
+	opacity: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	background-color: #8c8c8c;
 }
-.click-menu-inner:after{
+.icon-op-menu:after{
 	content: "";
-    display: block;
 	width: 30px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: .15s;
-    transition-timing-function: ease;
-    bottom: -10px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	bottom: -10px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
 }
-.activemenu .click-menu-inner:after{
+.clo-menu .icon-op-menu:after{
 	bottom: 0;
     transform: rotate(-90deg);
-    transition: bottom .1s ease-out,transform .22s .12s cubic-bezier(.215,.61,.355,1);
-    background-color: #8c8c8c;
-}
-.click-menu:hover,
-.click-menu:focus{
-	background-color: transparent !important;
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	background-color: #8c8c8c;
+	
 }

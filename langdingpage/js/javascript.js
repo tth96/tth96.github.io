@@ -1,10 +1,42 @@
 jQuery(function($){
 	"use strict"
-	$(document).ready(function(){
-		var menutop = $('.menu-header').height();
-		var page = $('.creative').position();
-		var home = $('.header').position();
+	$(document).ready(function(){		
+		// Click chạy
+			// $('.header .menu-header ul li').each(function(index){
+			// 	var e = $(this);
+			// 	$(this).click(function(){
+			// 		if(e.find('#wrapper-01')){
+			// 			var home = $('.header').position().top;
+			// 			$('body,html').animate({
+			// 				scrollTop: home
+			// 			});
+			// 		} else if(e.find('#wrapper-02')){
+			// 			var page = $('.creative').position().top;
+			// 			$('body,html').animate({
+			// 				scrollTop: page
+			// 			});
+			// 		}
+			// 	})
+			// })
+			
+			$('#wrapper-01').click(function(){
+				var home = $('.header').position().top;
+				$('body,html').animate({
+					scrollTop: home
+				},1000);
+				
+			});
+			$('#wrapper-02').click(function(){
+				var page = $('.creative').position().top;
+				$('body,html').animate({
+					scrollTop: page
+				},1000);
+			});
+
+
+		// Thanh Menu Fixed
 			$(window).scroll(function(){
+				var menutop = $('.menu-header').height();
 				var e = $(window).scrollTop();
 				if ( e > menutop){
 					$('.menu-header').addClass('ps-fix');
@@ -16,57 +48,55 @@ jQuery(function($){
 					$('.header .menu-header .input-icon').removeClass('menu-hidden');
 					$('.header .menu-header #download-theme').removeClass('menu-hidden');
 				}
-			});			
-		})
-		// Click-menu
-		$('.click-menu-box').click(function(){
-			$('.click-menu-box').toggleClass('activemenu');
-		})
-
-	    // Tạo dropdown
-			var psfix = $('.menu-header');
-			var clickmenu = psfix.find('.click-menu-box');
-			clickmenu.click(function(){
-			 var ulmenu = psfix.find('#dropdown');
-			 ulmenu.slideToggle('fast');
-
-		// Về trang cần click
-		$(".header .menu-header ul li #home").click(function(){
-			$('body,html').animate({
-					scrollTop: home.top
+			});	
+			
+		// Tạo nút xoay Menu 
+			$('.op-menu').click(function(){
+				$(this).toggleClass('clo-menu');
+				$('body').toggleClass('overhd')
+			})
+		// dropdown menu
+			$(".op-menu").click(function(){
+				$("#dropdown-ul").slideToggle('fast');
+			})
+		// isotope
+			
+			$('.creative .crea-menu ul li').each(function(index,value){
+				var isovalue = $(this);
+				var isocp = $(this).find('#home0');
+				var isobusiness = $(this).find('#business0');
+				var isomarketing = $(this).find('#marketing0');
+				var isoblog = $(this).find('#blog0');
+				var isoportfolio = $(this).find('#portfolio0');
+				var isoall = $(this).find('#all0')
+				isoall.click(function(){
+					$('.grid').isotope({ filter: '*' });
 				})
-		});
-		$("#pages").click(function(){
-			$('body,html').animate({
-					scrollTop: page.top
+				isocp.click(function(){
+					$('.grid').isotope({ filter: '.coporateiso' });
 				})
-		});
+				isobusiness.click(function(){
+					$('.grid').isotope({ filter: '.businessiso' });
+				})
+				isomarketing.click(function(){
+					$('.grid').isotope({ filter: '.marketingiso' });
+				})
+				isoblog.click(function(){
+					$('.grid').isotope({ filter: '.blogiso' });
+				})
+				isoportfolio.click(function(){
+					$('.grid').isotope({ filter: '.portfolioiso' });
+				}) 
 
-		$('#all0').click(function(){
-			$('.grid').isotope({ filter: '*' });
-		});
-		$('#home0').click(function(){
-			$('.grid').isotope({ filter: '.home0' });
-		});
-		$('#business0').click(function(){
-			$('.grid').isotope({ filter: '.business0' });
-		});
-		$('#marketing0').click(function(){
-			$('.grid').isotope({ filter: '.marketing0' });
-		});
-		$('#portfolio0').click(function(){
-			$('.grid').isotope({ filter: '.portfolio0' });
-		});
-		$('#blog0').click(function(){
-			$('.grid').isotope({ filter: '.blog0' });
-		});
+			})
+				// isocoporate.click(function(){
+				// 	$('.grid').isotope({ filter: '.coporateiso' });
+				// })
+				// isobusiness.click(function(){
+				// 	$('.grid').isotope({ filter: '.businessiso' });
+				// })
+				
 
-
-		$('#home').click(function(){
-			alert("Hê hê còn chạy")
-			console.log('Alert')
-		})
-
-
-	});
+		
+	})
 });

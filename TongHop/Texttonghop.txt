@@ -1,8 +1,9 @@
 ---- Lấy vị trí của phần tử -----
-
+	var e = $('.Class').offset();
 	var e = $('.Class').position();
-	Lấy từ top : e.top;
-	láy ngang : e.left;
+	Lấy từ top : e.top ;  --- $('.Class').position().top
+	láy ngang : e.left;   --- $('.Class').position().left
+
 
 ---- CÁCH KHAI BÁO JQUERY -----
 
@@ -16,8 +17,17 @@ jQuery(function($){
 	});
 })
 
----- Scroll đến vị trí mong muốn (hiện tại là kéo lên trên cùng) ----
+---- Width Responsive ----
+@media only screen and (max-width: 48px) {...}
+@media only screen and (max-width: 567px) {...}
+@media only screen and (max-width: 767px) {...}
+@media only screen and (max-width: 991px) {...}
+@media only screen and (min-width: 600px) {...} 
+@media only screen and (min-width: 768px) {...} 
+@media only screen and (min-width: 992px) {...} 
+@media only screen and (min-width: 1200px) {...}
 
+---- Scroll đến vị trí mong muốn (hiện tại là kéo lên trên cùng) ----
 	$('body,html').animate({
 					scrollTop: 0 ;
 				})
@@ -41,4 +51,100 @@ jQuery(function($){
 	$('.grid').isotope({ filter: '.so1' });
 	$('.grid').isotope({ filter: '.so4' });
 
-------
+------ Tạo Nút Menu -------
+HTML : 
+<button class="op-menu">
+	<span class="wrapper-op-menu">
+		<span class="icon-op-menu"></span>
+	</span>
+</button>
+
+Css :
+
+.op-menu{
+	padding: 0;
+	display: inline-flex;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	margin: 0;
+	border:none;
+	cursor: pointer;
+	outline: none;
+	background-color:transparent;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+.op-menu:focus{
+	outline: none;
+	border:none;
+}
+.wrapper-op-menu{
+	width: 30px;
+	height: 24px;
+	position: relative;
+	display: inline-block;
+}
+.icon-op-menu{
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+.clo-menu .icon-op-menu{
+	transform: rotate(225deg);
+	background-color: #8c8c8c;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+.icon-op-menu:before{
+	content: "";
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	top: -10px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+.clo-menu .icon-op-menu:before{
+	top: 0;
+	opacity: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	background-color: #8c8c8c;
+}
+.icon-op-menu:after{
+	content: "";
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	border-radius: 3px;
+	display: block;
+	bottom: -10px;
+	background-color: #fff;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+}
+.clo-menu .icon-op-menu:after{
+	bottom: 0;
+    transform: rotate(-90deg);
+    -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	background-color: #8c8c8c;
+}
+
+JS: 
+	$('.op-menu').click(function(){
+		$(this).toggleClass('clo-menu');
+	})
+
+----- 
