@@ -17,9 +17,11 @@
         filter: drop-shadow(1px -9px 11px gray);
         background-color: #14182c;
         z-index: 10 !important;
+        transition: all .3s ease;
     }
     .header .menu-header.ps-fix{
         z-index: 99 !important;
+        transition: all .3s ease;
     }
     .header .op-menu{
         display: inline-flex;
@@ -27,6 +29,7 @@
     }
     .header .menu-header #dropdown-ul{
         display: none;
+        transition: all .3s ease;
     }
     .header .menu-header #dropdown-ul li{
         display: block;
