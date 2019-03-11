@@ -305,10 +305,24 @@ body{
 .creative{
 	margin-top: 100px;
 }
-.creative .top .header-top{
+.top-title{
+	margin-bottom: 50px;
+}
+.feature .top-title .header-top-title:after{
+	display: block;
+	content: '';
+	height: 2px;
+	width: 70px;
+	background-color: #000;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.top-title .header-top-title{
 	position: relative;
 }
-.creative .top .header-top h1{
+.top-title .header-top-title h1{
 	color: #f1f1f3;
 	font-size: 120px;
 	text-transform: uppercase;
@@ -316,7 +330,7 @@ body{
 	text-align: center;
 	position: relative;
 }
-.creative .top .header-top h6{
+.top-title .header-top-title h6{
 	color: #333333;
 	font-size: 36px;
 	font-weight: bold;
@@ -327,7 +341,7 @@ body{
 	transform: translate(-50%,-50%);
 	
 }
-.creative .top p{
+.top-title p{
 	color: #7b7b7b;
 	font-size: 15px;
 	text-align: center;
@@ -536,5 +550,49 @@ body{
     -webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	background-color: #8c8c8c;
-	
+}
+.feature{
+	margin-bottom: 80px;
+}
+.feature .feature-product .product{
+	background-color: #fbfbfb;
+}
+.feature .feature-product .item-product{
+	margin-bottom: 30px;
+}
+.feature .feature-product .item-product .img-block .img-product{
+	background-color: #fff;
+	box-shadow: 0 0 32px -2px #dacccc4f;
+}
+.feature .feature-product .item-product .img-block,
+.feature .feature-product .item-product .content-product{
+	display: inline-block;
+	vertical-align: top;
+}
+.feature .feature-product .item-product .content-product{
+	width: calc(100% - 150px);
+	padding: 20px 45px 0 20px;
+}
+.feature .feature-product .item-product .content-product p{
+	margin-bottom: 5px;
+	font-size: 15px;
+	color: #7b7b7b;
+}
+.feature .feature-product .item-product .img-block .img-product{
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.feature .feature-product .item-product .img-block .img-product img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 100%;
+	max-height: 100%;
+}
+.banner{
+	background-image: url(../images/wrapper-banner.png);
+	padding: 120px 0;
 }

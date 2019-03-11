@@ -32,6 +32,12 @@ jQuery(function($){
 					scrollTop: page
 				},1000);
 			});
+			$('#wrapper-03').click(function(){
+				var feature = $('.feature').position().top;
+				$('body,html').animate({
+					scrollTop: feature
+				},1000);
+			});
 
 
 		// Thanh Menu Fixed
