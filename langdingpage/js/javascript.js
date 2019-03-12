@@ -1,6 +1,18 @@
 jQuery(function($){
 	"use strict"
-	$(document).ready(function(){		
+	$(document).ready(function(){	
+		//Slick
+		
+		$('.slide').slick({
+			slidesToShow: 1,
+			autoplay: true,
+ 			autoplaySpeed:4000,
+ 			dots: true,
+ 			arrows: false,
+		});
+
+
+
 		// Click chạy
 			// $('.header .menu-header ul li').each(function(index){
 			// 	var e = $(this);
