@@ -684,6 +684,9 @@ body{
 .banner .wrapper-right .background-macbook .img-block .slide-macbook .slick-dots li button:before{
 	color: #fff;
 }
+.key-feature{
+	margin-bottom: 100px;
+}
 .key-feature .product-key-features .item-product .img-block .img-item{
 	width: 40px;
 	height: 40px;
@@ -717,4 +720,129 @@ body{
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 30px;
+}
+.banner-woo{
+	background-color: #000;
+	margin-bottom: 100px;
+	padding-bottom: 100px;
+}
+.banner-woo .top-banner-woo{
+	display: flex;
+}
+.banner-woo .top-banner-woo #top-banner-02 .img-block .img-banner-woo{
+	position: relative;
+}
+.banner-woo .top-banner-woo div[id*="top-banner"]{
+	top: -50px;
+} 
+.banner-woo .top-banner-woo #top-banner-02 .img-block .img-banner-woo:before{
+	display: block;
+	content: '';
+	padding-top: 50%;
+}
+.banner-woo .top-banner-woo  #top-banner-02 .img-block .img-banner-woo img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-woo .top-banner-woo #top-banner-01,
+.banner-woo .top-banner-woo #top-banner-03{
+	position: relative;
+	padding: 0;
+}
+.banner-woo .top-banner-woo #top-banner-01 .img-block,
+.banner-woo .top-banner-woo #top-banner-03 .img-block{
+	position: absolute;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block .img-banner-woo,
+.banner-woo .top-banner-woo  #top-banner-03 .img-block .img-banner-woo{
+	width: 80%;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block .img-banner-woo img,
+.banner-woo .top-banner-woo  #top-banner-03 .img-block .img-banner-woo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block#cs-banner1-01{
+	right: -60px;
+	top: 0;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block#cs-banner1-01 .img-banner-woo,
+.banner-woo .top-banner-woo  #top-banner-03 .img-block#cs-banner3-01 .img-banner-woo{
+	width: 85%;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block#cs-banner1-01 .img-banner-woo{
+	float: right;
+}
+.banner-woo .top-banner-woo  #top-banner-01 .img-block#cs-banner1-02{
+	bottom: -30px;
+	left: 0;
+}
+.banner-woo .top-banner-woo  #top-banner-03 .img-block#cs-banner3-01{
+	top: 0;
+	left: -30px;
+}
+.banner-woo .top-banner-woo  #top-banner-03 .img-block#cs-banner3-02{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.banner-woo .top-banner-woo  #top-banner-03 .img-block#cs-banner3-02 .img-banner-woo{
+	width: 60%;
+	float: right;
+}
+.banner-woo .top-banner-woo  #top-banner-03 .img-block#cs-banner3-03{
+	bottom: -30px;
+}
+.banner-woo .content-banner-woo{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.banner-woo .content-banner-woo .text{
+	color: #b1b1b1;
+	font-size: 15px;
+}
+.banner-woo .content-banner-woo .text h4{
+	font-size: 48px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.banner-woo .content-banner-woo .text h4:after{
+	content: '';
+	display: block;
+	width: 70px;
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.banner-woo .content-banner-woo .text p{
+	margin: 30px 0;
+}
+.banner-woo .content-banner-woo .bt-banner-woo{
+	border: none;
+	outline: none;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 40px;
+	margin-left: 20px;
+	border: 1px solid #33384b;
+	background-color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.banner-woo .content-banner-woo .bt-banner-woo:hover,
+.banner-woo .content-banner-woo .bt-banner-woo:focus{
+	background-color: #0070ea;
+	color: #fff;
 }
