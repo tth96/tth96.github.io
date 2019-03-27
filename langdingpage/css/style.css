@@ -719,6 +719,9 @@ body{
 	flex-direction: column;
 	padding: 30px 0;
 	position: relative;
+	-webkit-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
 }
 .key-feature .product-key-features .item-product .box:after{
 	display: block;
@@ -728,7 +731,8 @@ body{
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: #9da9a9b3;
+	background-color: #86909078;
+	border-radius:50%;
 	opacity:0;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -742,7 +746,8 @@ body{
 	width: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #9da9a9b3;
+	background-color: #86909078;
+	border-radius:50%;
 	opacity:0;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -756,7 +761,8 @@ body{
 	width: 100%;
 	bottom: 0;
 	right: 0;
-	background-color: #9da9a9b3;
+	background-color: #86909078;
+	border-radius:50%;
 	opacity:0;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -770,23 +776,38 @@ body{
 	width: 2px;
 	top: 0;
 	right: 0;
-	background-color: #9da9a9b3;
+	background-color: #86909078;
+	border-radius:50%;
 	opacity:0;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
-.key-feature .product-key-features .item-product:hover .box:after,
-.key-feature .product-key-features .item-product:hover .content-item:after{
+.key-feature .product-key-features .item-product .box:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	box-shadow: 0 0px 9px 0px #80808059;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.key-feature .product-key-features .item-product .box:hover:after,
+.key-feature .product-key-features .item-product .box:hover .content-item:after{
 	opacity: 1;
 	animation-name: hoverkeywidth;
   	animation-duration: 2s;
+  	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
-.key-feature .product-key-features .item-product:hover .box:before,
-.key-feature .product-key-features .item-product:hover .content-item:before{
+.key-feature .product-key-features .item-product .box:hover:before,
+.key-feature .product-key-features .item-product .box:hover .content-item:before{
 	opacity: 1;
 	animation-name: hoverkeyheight;
   	animation-duration: 2s;
+  	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 @keyframes hoverkeywidth {
 	from {
@@ -939,6 +960,35 @@ body{
 	background-color: #0070ea;
 	color: #fff;
 }
+.main-shortcodes{
+	position: relative;
+}
+.shortcodes .top-title .header-top-title:after{
+	display: block;
+	content: '';
+	height: 2px;
+	width: 70px;
+	background-color: #000;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main-shortcodes .text-scodes{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.main-shortcodes .text-scodes h3{
+	font-size: 48px;
+	color: #555555;
+	font-weight: bold;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0 #cec6c6;
+	padding: 15px; 
+	cursor: pointer;
+}
 .main-shortcodes .item-shortcodes a{
 	text-decoration: none;
 	color: #555555;
@@ -948,7 +998,7 @@ body{
 	margin: 0;
 }
 .main-shortcodes .row .border-shortcodes{
-	border: 1px solid #efe1e16b;
+	border: 1px solid #eae3e34a;
 	padding: 15px;
 }
 .main-shortcodes .item-shortcodes{
