@@ -1,8 +1,8 @@
 ---- Lấy vị trí của phần tử -----
+	var e = $('.Class').position() ==> (So với div cha)
 	var e = $('.Class').offset();
-	var e = $('.Class').position();
-	Lấy từ top : e.top ;  --- $('.Class').position().top
-	láy ngang : e.left;   --- $('.Class').position().left
+	Lấy từ top : e.top ;  --- $('.Class').offset().top
+	láy ngang : e.left;   --- $('.Class').offset().left
 
 
 ---- CÁCH KHAI BÁO JQUERY -----
