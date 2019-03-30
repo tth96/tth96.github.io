@@ -10,6 +10,13 @@ jQuery(function($){
  			dots: true,
  			arrows: false,
 		});
+		$('.slide-box').slick({
+			slidesToShow: 1,
+			autoplay: true,
+ 			autoplaySpeed:4000,
+ 			dots: false,
+ 			arrows: false,
+		});
 
 
 
@@ -32,22 +39,39 @@ jQuery(function($){
 			// })
 			
 			$('#wrapper-01').click(function(){
-				var home = $('.header').position().top;
+				var home = $('.header').offset().top;
 				$('body,html').animate({
 					scrollTop: home
 				},1000);
-				
 			});
 			$('#wrapper-02').click(function(){
-				var page = $('.creative').position().top;
+				var page = $('.creative').offset().top;
 				$('body,html').animate({
 					scrollTop: page
 				},1000);
 			});
 			$('#wrapper-03').click(function(){
-				var feature = $('.feature').position().top;
+				var feature = $('.feature').offset().top;
 				$('body,html').animate({
 					scrollTop: feature
+				},1000);
+			});
+			$('#wrapper-04').click(function(){
+				var keyfeature = $('.key-feature').offset().top;
+				$('body,html').animate({
+					scrollTop: keyfeature
+				},1000);
+			});
+			$('#wrapper-05').click(function(){
+				var shortcodes = $('.shortcodes').offset().top;
+				$('body,html').animate({
+					scrollTop: shortcodes
+				},1000);
+			});
+			$('#wrapper-06').click(function(){
+				var footer = $('.footer').offset().top;
+				$('body,html').animate({
+					scrollTop: footer
 				},1000);
 			});
 

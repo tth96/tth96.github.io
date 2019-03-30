@@ -13,8 +13,8 @@
         position: initial !important;
         width: 100% !important;
     }
-    .layout .be-feature{
-        padding: 0 15px;
+    .layout .be-feature .wrapper-be-feature{
+        padding: 50px 15px;
     }
     .banner-woo .top-banner-woo #top-banner-01,
     .banner-woo .top-banner-woo #top-banner-03{
@@ -25,6 +25,12 @@
     }
     .viewbutton{
         display: block;
+        text-align: center;
+    }
+    .be-feature .wrapper-bottom .slide-box.slick-slider{
+        padding: 50px 15px;
+    }
+    .footer .wrapper-footer .text{
         text-align: center;
     }
 }
@@ -38,6 +44,16 @@
     }
     .layout .top-title .header-top-title h6{
         font-size: 28px;
+    }
+    .be-feature .wrapper-bottom .text p{
+        font-size: 18px !important;
+    }
+    .be-feature .wrapper-bottom .text .iconstar{
+        width: 80px !important;
+        height: 13px !important;
+    }
+    .be-feature .wrapper-bottom .text h6{
+        font-size: 13px !important;
     }
 }
 
