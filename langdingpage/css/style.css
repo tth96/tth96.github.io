@@ -1033,58 +1033,11 @@ body{
 	color: #ced0da;
 }
 .be-feature .wrapper-text{
-	padding: 50px 15px;
-}
-.layout .cre-button{
-	outline: none;
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 40px;
-    background-color: #000;
-    border-radius: 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    -webkit-transition: all .6s ease;
-    -o-transition: all .6s ease;
-    transition: all .6s ease;
-    position: relative;
-    border: none;
-}
-.layout .cre-button:hover,
-.layout .cre-button:focus{
-	background-color: #696262;
-	color: #fff;
-}
-.layout .cre-button:before{
-	content: "\f30b";
-	font-size: 16px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-	position: absolute;
-	top: 50%;
-	left: 0px;
-	opacity: 0;
-	display: block;
-	transform: translateY(-50%);
-	-webkit-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-	pointer-events: none;
-}
-.layout .cre-button:hover:before,
-.layout .cre-button:focus:before{
-	opacity: 1;
-	left: 15px;
-	pointer-events: auto;	
+	padding: 0 50px;
 }
 .be-feature .wrapper-be-feature .img-block{
 	position: relative;
-	box-shadow: 0 0 12px 0px #bfb9b9;
-}
-.be-feature .wrapper-01 .wrapper-be-feature .img-block{
-	position: relative;
-	box-shadow: 0px 0 12px 0px #bfb9b9;
+	box-shadow: 0 0 28px 10px #bfb9b9;
 }
 .be-feature .wrapper-be-feature .img-block:before{
 	content: '';
@@ -1098,33 +1051,13 @@ body{
 	width: 100%;
 	position: absolute;
 }
-.be-feature .wrapper-01{
-	position: relative;
+.be-feature .wrapper-01,
+.be-feature .wrapper-02{
 	margin-bottom: 100px;
-}
-.be-feature .wrapper-01 .wrapper-be-feature{
-	position: absolute;
-	width: 50%;
-	display: block;
-	top: 0;
-	right: 0;
+	align-items: center;
 }
 .be-feature .wrapper-02{
-	position: relative;
-	margin-bottom: 100px;
-}
-.be-feature .wrapper-02 .wrapper-be-feature{
-	position: absolute;
-	width: 50%;
-	display: block;
-	top: 0;
-	left: 0;
-}
-..be-feature .container{
-	margin: 50px 0;
-}
-.be-feature .wrapper-02 .container .row{
-	justify-content: flex-end;
+	flex-direction: row-reverse;
 }
 .shortcodes .viewbutton{
 	text-align: center;
@@ -1164,7 +1097,7 @@ body{
 	font-size: 24px;
 }
 .be-feature .wrapper-bottom .text h6{
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: bold;
 	margin-top: 5px;
 }
@@ -1181,6 +1114,49 @@ body{
 	left: 0;
 }
 .be-feature .wrapper-bottom .container{
-	padding: 100px;
+	padding: 50px 15px;
 }
-
+.layout .cre-button{
+	outline: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 40px;
+    background-color: #000;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    border: none;
+}
+.layout .cre-button:hover,
+.layout .cre-button:focus{
+	background-color: #696262;
+	color: #fff;
+}
+.layout .cre-button:before{
+	content: "\f30b";
+	font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	opacity: 0;
+	display: block;
+	transform: translateY(-50%);
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	pointer-events: none;
+	color: #fff;
+}
+.layout .cre-button:hover:before,
+.layout .cre-button:focus:before{
+	opacity: 1;
+	left: 15px;
+	pointer-events: auto;	
+}
