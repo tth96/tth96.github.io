@@ -82,13 +82,13 @@ jQuery(function($){
 				var e = $(window).scrollTop();
 				if ( e > menutop){
 					$('.menu-header').addClass('ps-fix');
-					$('.header .menu-header .input-icon').addClass('menu-hidden');
-					$('.header .menu-header #download-theme').addClass('menu-hidden');
+					// $('.header .menu-header .input-icon').addClass('menu-hidden');
+					// $('.header .menu-header #download-theme').addClass('menu-hidden');
 				}
 				else{
 					$('.menu-header').removeClass('ps-fix');
-					$('.header .menu-header .input-icon').removeClass('menu-hidden');
-					$('.header .menu-header #download-theme').removeClass('menu-hidden');
+					// $('.header .menu-header .input-icon').removeClass('menu-hidden');
+					// $('.header .menu-header #download-theme').removeClass('menu-hidden');
 				}
 			});	
 			
