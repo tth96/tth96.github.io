@@ -146,12 +146,14 @@ body{
 	text-align: center;
 	margin-bottom: 40px;
 	display: block;
+	margin-top: 15px;
+	margin-left: 16px;
 }
 .header .cs-h3-01{
 	display: none;
 }
 .header .cs-h3-01 h3{
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: bold;
 	color: #fff;
 	background-color: #3b4259;
@@ -161,35 +163,38 @@ body{
 	display: initial;
 }
 .header .text-logo .text h4{
-	font-size: 66px;
-	color: #fff;
-	padding: 10px 0;
+	font-size: 67px;
+    color: #fff;
+    padding: 10px 0px;
+    margin-left: 16px;
 }
 .header .text-logo .text p{
 	font-size: 18px;
 	color: #d9dfeb;
 	font-style: italic;
+	padding: 2px 0 0 25px;
 }
 .header .text-logo .bg-logo.row{
 	margin: 0 ;
 }
 .header .text-logo .bg-logo .item-logo .logo .button-text{
 	text-align: center;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
+    padding-top: 15px;
 }
 .header .text-logo .bg-logo .item-logo .logo .button-text button{
 	border: none;
 	outline: none;
 	color: #fff;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 10px 40px;
-	margin-left: 20px;
-	border: 1px solid #33384b;
-	background-color: transparent;
-	border-radius: 20px;
-	cursor: pointer;
-	text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 33px;
+    margin-left: 25px;
+    border: 1px solid #33384b;
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .header .text-logo .bg-logo .item-logo .logo .button-text button:hover{
 	background-color: #fff;
@@ -556,6 +561,7 @@ body{
 }
 .feature{
 	margin-bottom: 80px;
+	margin-top: 45px;
 }
 .feature .feature-product .product{
 	background-color: #fbfbfb;
@@ -573,19 +579,23 @@ body{
 	vertical-align: middle;
 }
 .feature .feature-product .item-product .content-product{
-	width: calc(100% - 150px);
-	padding: 20px 45px 0 20px;
+	width: calc(100% - 240px);
+	padding: 0 10px;
 }
 .feature .feature-product .item-product .content-product p{
 	margin-bottom: 5px;
-	font-size: 15px;
+	font-size: 14px;
 	color: #7b7b7b;
+}
+.feature .feature-product .item-product .content-product p strong{
+	font-size: 20px;
 }
 .feature .feature-product .item-product .img-block .img-product{
 	position: relative;
-	width: 150px;
-	height: 150px;
+	width: 240px;
+	height: 240px;
 }
+
 
 .feature .feature-product .item-product .img-block .img-product img{
 	position: absolute;
