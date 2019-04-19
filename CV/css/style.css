@@ -20,7 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .container{
     box-shadow: 0 0 6px 2px #9e979b94;
-    width: 900px;
+    width: 70%;
 }
 div[class*="col-"]{
     padding: 0;
@@ -32,18 +32,20 @@ div[class*="col-"]{
     font-size: 20px;
 }
 .container .wrapper-contact{
-    background: rgba(133,155,242,1);
-background: -moz-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(133,155,242,1)), color-stop(100%, rgba(22,56,227,1)));
-background: -webkit-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
-background: -o-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
-background: -ms-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
-background: linear-gradient(to right, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#859bf2', endColorstr='#1638e3', GradientType=1 );
+   
+    background-color: #7f96f1;
 
 }
 .wrapper-contact .img-block{
     position: relative;
+    background: rgba(133,155,242,1);
+    background: -moz-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(133,155,242,1)), color-stop(100%, rgba(22,56,227,1)));
+    background: -webkit-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
+    background: -o-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
+    background: -ms-linear-gradient(left, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
+    background: linear-gradient(to right, rgba(133,155,242,1) 0%, rgba(22,56,227,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#859bf2', endColorstr='#1638e3', GradientType=1 );
 }
 .wrapper-contact .img-block:before{
     padding-top: 100%;
@@ -59,27 +61,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#859bf2', end
     border-radius: 50%;
     padding: 25px;
 }
-.title{
+.wrapper-contact .title{
+    margin-bottom: 2px;
 }
-.title h3{
+.wrapper-contact .title h3{
     display: block;
     text-align: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 18px;
     margin: 0;
+ 
     /* background: -webkit-linear-gradient(#bccaaa, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    color: #333333;
-    text-transform: uppercase;
-    padding: 10px 0;
+    color: #fff;
+    /* text-transform: uppercase; */
+    padding: 5px 0;
     background: -webkit-linear-gradient(#0650f5, #6a8ff7);
-    box-shadow: 0px 4px 1px -2px #2f548c, 0px -2px 1px -2px #2f548c;
+    box-shadow: 0px 4px 2px -1px #2f548c;
 }
 #user{
    
 }
-.title#user:before {
+/* .title#user:before {
     text-align: center;
     content: "\f007";
     font-size: 20px;
@@ -93,20 +97,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#859bf2', end
     border-radius: 30px;
     border: 1px solid #fff;
     margin-bottom: 10px;
+} */
+.wrapper-contact .title-left,.text-right{
+    display: inline-block;
+    vertical-align: middle;
 }
-.text{
-    padding: 0 15px;
-    padding-top: 10px;
-    text-align: center;
-}
-.text h6,p{
+.wrapper-contact .title-left h6,.title-left p,.text-right h6,.text-right p{
     padding: 5px 0;
     margin: 0;
-    line-height: 20px;
-    font-size: 20px;
-    display: inline-block;
+    line-height: 14px;
+    font-size: 16px;
     color: #fff;
+    text-align: left;
     /* background: -webkit-linear-gradient(#fff, #c3b6b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+.wrapper-contact .title-left{
+    padding-right: 10px;
+}
+.wrapper-contact .title-left h6:after{
+    content:':';
+    float: right;
+    padding-left: 15px;
+}
+.wrapper-contact .contact .box-text{
+    padding: 0px 20px;
+    margin-top: 30px;
+}
+.wrapper-contact .box-text .title-main h3{
+    position: relative;
+    margin: 0;
+    padding: 5px 0;
+    color: #183873;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.wrapper-contact .box-text .title-main h3:before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    display: block;
+    background-color: #183873;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.wrapper-contact .wrapper-title-main-top{
+    margin-bottom: 10px;
 }
