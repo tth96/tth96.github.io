@@ -1,3 +1,3 @@
 <?php 
-	include_once("cv.html");
+	include_once("index.html");
 ?>
