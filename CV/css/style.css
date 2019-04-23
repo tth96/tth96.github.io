@@ -125,11 +125,6 @@ div[class*="col-"]{
 .wrapper-contact .title-left{
     padding-right: 10px;
 }
-.wrapper-contact .title-left h6:after{
-    content:':';
-    float: right;
-    padding-left: 15px;
-}
 .wrapper-contact .text-main p:before{
     content: "\f111";
     font-size: 5px;
@@ -256,4 +251,7 @@ div[class*="col-"]{
 }
 .cs-icon03:before{
     content: "\f66b";
+}
+.wrapper-contact .title-left h6, .title-left p{
+    line-height: 20px;
 }
