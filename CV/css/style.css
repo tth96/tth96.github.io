@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Lobster', cursive; */
     /* font-family: 'Roboto', sans-serif; */
 }
 .cvxinviec{
@@ -149,6 +150,7 @@ div[class*="col-"]{
     color: #183873;
     font-size: 22px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .wrapper-contact .box-text .title-main h3:before{
     content: '';
@@ -202,11 +204,12 @@ div[class*="col-"]{
 .wrapper-bg-right .box-text-right .title-content-right{
     background-color: #4360e9;
     color: #fff;
-    padding: 5px 30px;
+    padding: 5px 15px;
 }
 .wrapper-bg-right .box-text-right .title-content-right h3{
     margin: 0;
     font-size: 24px;
+    font-weight: 500;
 }
 .wrapper-bg-right .box-text-right .content-text .content-left,
 .wrapper-bg-right .box-text-right .content-text .content-right{
@@ -216,12 +219,14 @@ div[class*="col-"]{
 .wrapper-bg-right .box-text-right .content-text p{
    margin: 0;
    line-height: 28px;
+   font-weight: 500;
 }
 .wrapper-bg-right .box-text-right .content-text a{
     display: block;
     text-decoration: none;
     color: #888888;
     padding: 5px 0;
+    font-weight: 500;
 }
 .wrapper-bg-right .box-text-right .content-text a:hover,
 .wrapper-bg-right .box-text-right .content-text a:focus{
@@ -231,4 +236,24 @@ div[class*="col-"]{
     content: '-';
     padding-right: 10px;
 }
-
+.title-right p{
+    font-weight: 500;
+}
+.cs-color{
+    background-color: #7f96f1;
+}
+.wrapper-bg-right .box-text-right .title-content-right h3:before{
+    font-size: 23px;
+    padding-right: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.wrapper-bg-right .box-text-right .title-content-right .cs-icon01:before{
+    content: "\f55f";
+}
+.cs-icon02:before{
+    content: "\f19d";
+}
+.cs-icon03:before{
+    content: "\f66b";
+}
