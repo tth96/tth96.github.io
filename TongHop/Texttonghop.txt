@@ -147,4 +147,34 @@ JS:
 		$(this).toggleClass('clo-menu');
 	})
 
------ 
+----- Turn Off F12 , Right Click , Crtl-I(U)(J) ------
+Off Right Click :
+
+	<body oncontextmenu="return false;>
+
+Off InpectElement 
+
+	document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+    return false;
+    }
+    }
+
+----- Tạo Random Số Âm Dương ------
+Ví Dụ tạo từ -100 ~ 100 
+Math.floor((Math.random()*201)-100)
+201 : là từ 0 ~ 200 
+Random ( 0 ~ 200 ) - 100 ;
+----- Tìm Max - min ------
+var Array = [0 0 0 0 0];
+var max = Math.max.apply(Math, Array)	
+var max = Math.min.apply(Math, Array)	
