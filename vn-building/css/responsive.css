@@ -123,6 +123,12 @@
 		display: block;
 		text-align: center;
 	}*/
+	.nav-menu .menu-dropdown-cs{
+		display: none;
+	}
+	.nav-menu .title-menu-dropdown-cs{
+		display: block;
+	}
 	.right-menu .nav-menu ul li{
 		display: block;
 	}

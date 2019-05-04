@@ -147,7 +147,11 @@ JS:
 		$(this).toggleClass('clo-menu');
 	})
 
+
+
+
 ----- Turn Off F12 , Right Click , Crtl-I(U)(J) ------
+
 Off Right Click :
 
 	<body oncontextmenu="return false;>
@@ -169,7 +173,10 @@ Off InpectElement
     }
     }
 
------ Tạo Random Số Âm Dương ------
+
+
+----- TẠO RANDOM SỐ ÂM DƯƠNG ------
+
 Ví Dụ tạo từ -100 ~ 100 
 Math.floor((Math.random()*201)-100)
 201 : là từ 0 ~ 200 

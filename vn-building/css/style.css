@@ -1586,3 +1586,20 @@ div[class*="contact-"]{
 	content: '<';
 	font-size: 13px;
 }
+.clickmenudropdown-cs{
+	width: 100%;
+	font-size: 20px;
+	color: #fff;
+	padding: 10px 0;
+	background-color: #4e4e98;
+	cursor: pointer;
+	outline: none !important;
+	border: none !important;
+}
+.clickmenudropdown-cs:hover{
+	outline: none;
+	border: none;
+}
+.title-menu-dropdown-cs{
+	display: none;
+}

@@ -112,7 +112,7 @@ jQuery(function($){
 			    }
 			  ]
 		});
-		$('#showmenu-1').click(function(){
+				$('#showmenu-1').click(function(){
             $('#menu-js-1').slideToggle("fast");
         });
         $('#showmenu-2').click(function(){
@@ -125,6 +125,17 @@ jQuery(function($){
 		// 	$(this).toggleClass("rotate-button");
 		// 	return;	
 		// })
+
+		//Tạo Dropdown Menu
+		$('.nav-menu').each(function(index, value){
+			var navmenu = $(value);
+			var clickmenudropdown = navmenu.find('.clickmenudropdown-cs');
+			clickmenudropdown.click(function(){
+				var uldropdown = navmenu.find('.menu-dropdown-cs');
+				uldropdown.slideToggle('fast');
+			});
+		});
+		////
      	$('.chat-online').click(function(){
      		alert('Chưa có bảng chat');
      	})
