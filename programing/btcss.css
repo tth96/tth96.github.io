@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .form .flex input{
+    display: block;
+    width: calc(100% - 30%);
+}
+.container .form .flex{
+    display: flex;
+    margin: 20px 0;
+}
+.container .form .flex span{
+    width: 30%;
+}
+.container .form{
+    width: 40%;
+    margin: 0 auto;
+}
+#nhap{
+    outline: none;
+    box-shadow: none;
+    border: none ;
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border: 1px solid #555555;
+    margin: 0 auto;
+    display: block;
+}
+#nhap:hover,
+#nhap:focus{
+    background: #000;
+    color: #fff;
+}
+input{
+    outline: none;
+    border: none;
+    width: 30px;
+    text-align: center;
+}
